@@ -1,0 +1,167 @@
+:root{
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#superman{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*centrado vertical*/
+    border: 1px solid red;
+}
+
+.logo-superman-container{
+    /*
+    clip-path: polygon(tips go clockwise);
+    */
+    border: 1px solid red;
+    background-color: red;
+    clip-path: polygon(15% 0, 85% 0, 100% 27%, 50% 100%, 0 27%);
+    width: 15%;
+    height: 20vh;
+    border-radius: 40px;
+}
+
+.logo-inner{
+    border: 1px solid red;
+    background: yellow;
+    clip-path: polygon(15% 0, 85% 0, 100% 27%, 50% 100%, 0 27%);
+    width: 91%;
+    margin: 5px 10px 10px 9px;
+    height: 17.5vh;
+}
+
+.big-red-circle{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    width: 165px;
+    height: 106px;
+    margin-left: 8px;
+    margin-top: -9px;
+}
+
+.left-corner-higher{
+    /*border: 1px solid yellow;
+    background-color: yellow;*/
+    width: 8px;
+    height: 48px;
+    margin-left: 13px;
+    margin-top: -10px;
+    clip-path: polygon(0 0, 100% 0%, 60% 19%, 48% 50%, 64% 86%, 100% 100%, 0 100%);
+    transform: rotate(41deg);
+}
+
+.top-right-corner-higher{
+    border: 1px solid red;
+    background-color: yellow;
+    width: 48px;
+    height: 10px;
+    margin-top: -100px;
+    margin-left: 109px;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 0);
+    border-radius: 0 0 50% 0;
+}
+
+.red-square{
+    border: 1px solid red;
+    background-color: red;
+    width: 25px;
+    height: 25px;
+    margin-top: -12px;
+    margin-left: 143px;
+}
+
+.yellow-ellipse{
+    background-color: yellow;
+    border-radius: 50% 50% 0 0;
+    width: 8px;
+    height: 25px;
+    margin-top: -22px;
+    margin-left: 166px;
+    transform: rotate(-30deg);
+}
+
+.red-tip{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50% 50% 0 0;
+    width: 8px;
+    height: 25px;
+    margin-top: -12px;
+    margin-left: 163px;
+    transform: rotate(-30deg);
+}
+
+.second-yellow-ellipse{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 87px;
+    height: 25px;
+    margin-top: -38px;
+    margin-left: 55px;
+}
+
+.right-yellow-ellipse{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 79px;
+    height: 25px;
+    margin-top: -24px;
+    margin-left: 88px;
+    transform: rotate(14deg);
+}
+
+.second-right-yellow-ellipse{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 55px;
+    height: 25px;
+    margin-top: -11px;
+    margin-left: 130px;
+    transform: rotate(49deg);
+}
+
+.red-ellipse{border: 1px solid yellow;
+    background-color: red;
+    border-radius: 50%;
+    width: 55px;
+    height: 25px;
+    margin-top: -11px;
+    margin-left: 130px;
+    transform: rotate(49deg);
+}
+
+.right-corner-higher{
+    /*border: 1px solid yellow;
+    background-color: yellow;*/
+    width: 34px;
+    height: 10px;
+    margin-top: 7px;
+    margin-left: 156px;
+    transform: rotate(48deg);
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 27%);
+    border-radius: 50% 40% 40% 100%;
+}
+
+.middle-higher{
+    /*border: 1px solid yellow;
+    background-color: yellow;*/
+    width: 34px;
+    height: 10px;
+    margin-top: -19px;
+    margin-left: 50px;
+    clip-path: polygon(100% 100%, 100% 82%, 92% 71%, 74% 64%, 58% 63%, 47% 62%, 33% 63%, 20% 66%, 16% 73%, 13% 78%, 14% 85%, 27% 86%, 39% 81%, 50% 77%, 61% 77%, 70% 82%, 84% 86%, 92% 96%);
+    transform: rotate(48deg);
+}
+
+.middle-lower{}
+
+.bottom-corner{}
