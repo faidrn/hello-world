@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     align-items: center; /*centrado vertical*/
-    border: 1px solid red;
 }
 
 .logo-superman-container{
@@ -46,8 +45,6 @@
 }
 
 .left-corner-higher{
-    /*border: 1px solid yellow;
-    background-color: yellow;*/
     width: 8px;
     height: 48px;
     margin-left: 13px;
@@ -129,39 +126,124 @@
     transform: rotate(49deg);
 }
 
-.red-ellipse{border: 1px solid yellow;
+.red-ellipse{
+    border: 1px solid red;
     background-color: red;
     border-radius: 50%;
     width: 55px;
     height: 25px;
-    margin-top: -11px;
-    margin-left: 130px;
+    margin-top: -24px;
+    margin-left: 115px;
     transform: rotate(49deg);
 }
 
-.right-corner-higher{
-    /*border: 1px solid yellow;
-    background-color: yellow;*/
-    width: 34px;
-    height: 10px;
-    margin-top: 7px;
-    margin-left: 156px;
-    transform: rotate(48deg);
-    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 27%);
-    border-radius: 50% 40% 40% 100%;
+.yellow-patch{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 40px;
+    height: 18px;
+    position: absolute;
+    top: 324px;
+    left: 678px;
 }
 
-.middle-higher{
-    /*border: 1px solid yellow;
-    background-color: yellow;*/
-    width: 34px;
-    height: 10px;
-    margin-top: -19px;
-    margin-left: 50px;
-    clip-path: polygon(100% 100%, 100% 82%, 92% 71%, 74% 64%, 58% 63%, 47% 62%, 33% 63%, 20% 66%, 16% 73%, 13% 78%, 14% 85%, 27% 86%, 39% 81%, 50% 77%, 61% 77%, 70% 82%, 84% 86%, 92% 96%);
-    transform: rotate(48deg);
+.s-middle-top{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    width: 88px;
+    height: 45px;
+    position: absolute;
+    left: 661px;
+    top: 341px;
+    transform: rotate(8deg);
 }
 
-.middle-lower{}
+.s-middle-top-2{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    width: 88px;
+    height: 45px;
+    position: absolute;
+    left: 669px;
+    top: 341px;
+    transform: rotate(8deg);
+}
 
-.bottom-corner{}
+.yellow-patch-2{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 40px;
+    height: 18px;
+    position: absolute;
+    top: 324px;
+    left: 709px;
+}
+
+.s-middle-top-3{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    width: 88px;
+    height: 45px;
+    position: absolute;
+    left: 667px;
+    top: 342px;
+}
+
+.yellow-patch-3{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 46px;
+    height: 18px;
+    position: absolute;
+    top: 339px;
+    left: 714px;
+}
+
+.yellow-lower-bottom{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 45px;
+    height: 18px;
+    position: absolute;
+    left: 656px;
+    top: 380px;
+}
+
+.yellow-lower-left-bottom{
+    border: 1px solid yellow;
+    background-color: yellow;
+    border-radius: 50%;
+    width: 54px;
+    height: 18px;
+    margin-left: 39px;
+    margin-top: 15px;
+    transform: rotate(21deg);
+}
+
+.red-lower-left-bottom{
+    border: 1px solid red;
+    background-color: red;
+    border-radius: 50%;
+    width: 45px;
+    height: 18px;
+    margin-left: 36px;
+    margin-top: -36px;
+    transform: rotate(6deg);
+}
+
+.yellow-little-circle-bottom{
+    border: 1px solid yellow;
+    background-color: yellow;
+    width: 17px;
+    height: 10px;
+    margin-left: 66px;
+    margin-top: 23px;
+    border-radius: 50%;
+}
