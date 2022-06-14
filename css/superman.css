@@ -246,18 +246,72 @@
 }*/
 
 @media screen and (max-width: 1366px) {
+    .logo-inner{
+        width: 89%;
+        margin: 5px 10px 10px 11px;
+    }
+
+    .top-right-corner-higher{
+        width: 55px;
+        height: 12px;
+    }
+
+    .red-square{
+        margin-top: -13px;
+        margin-left: 146px;
+    }
+
+    .yellow-ellipse{
+        margin-left: 173px;
+        width: 9px;
+        margin-top: -25px;
+    }
+
+    .red-tip{
+        height: 32px;
+        margin-top: -15px;
+        margin-left: 171px;
+    }
+
+    .second-right-yellow-ellipse{
+        margin-top: -15px;
+        margin-left: 131px;
+        transform: rotate(32deg);
+    }
+
+    .red-ellipse{
+        border: none;
+        border-radius: 0%;
+        width: 0px;
+        height: 0px;
+        margin-top: 0;
+        margin-left: 0;
+    }
+
     .yellow-patch{
-        left: 678px;
+        /*left: 678px;*/
+        border: none;
+        border-radius: 0%;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        left: 0;
     }
 
     .yellow-patch-2{
-        left: 709px;
+        /*left: 709px;*/
+        border: none;
+        border-radius: 0%;
+        width: 0px;
+        height: 0px;
+        top: 0;
+        left: 0;
     }
 
     .s-middle-top{
-        left: 661px;
+        left: 668px;
         top: 341px;
-        transform: rotate(8deg);
+        transform: rotate(-6deg);
     }
 
     .s-middle-top-2{
@@ -272,7 +326,7 @@
         transform: rotate(8deg);
     }
 
-    .s-middle-top-3{
+    /*.s-middle-top-3{
         border: 1px solid red;
         background-color: red;
         border-radius: 50%;
@@ -281,9 +335,9 @@
         position: absolute;
         left: 667px;
         top: 342px;
-    }
+    }*/
 
-    .yellow-patch-3{
+    /*.yellow-patch-3{
         border: 1px solid yellow;
         background-color: yellow;
         border-radius: 50%;
@@ -292,7 +346,7 @@
         position: absolute;
         top: 339px;
         left: 714px;
-    }
+    }*/
 
     .yellow-lower-bottom{
         left: 656px;
@@ -300,11 +354,13 @@
 
     .yellow-lower-left-bottom{
         margin-top: 15px;
+        transform: rotate(27deg);
     }
 
     .red-lower-left-bottom{
-        width: 45px;
-        margin-top: -36px;
+        width: 53px;
+        margin-top: -30px;
+        transform: rotate(7deg);
     }
 
     .yellow-little-circle-bottom{
@@ -313,7 +369,7 @@
         width: 17px;
         height: 10px;
         margin-left: 66px;
-        margin-top: 23px;
+        margin-top: 22px;
         border-radius: 50%;
     }
 }
