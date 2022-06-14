@@ -51,7 +51,7 @@
 
 .number-container{
     position: absolute;
-    left: 17.6%;
+    left: 19%;
     height: 10.5vh;
     top: 119px;
     width: 4.9%;
@@ -155,4 +155,11 @@
     height: 22px;
     bottom: 0px;
     left: 0;
+}
+
+@media screen and (max-width: 1024px) {
+    .number-container{
+        left: 17.6%;
+
+    }
 }
