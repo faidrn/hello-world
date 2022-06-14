@@ -142,7 +142,7 @@
     height: 18px;
     position: absolute;
     top: 324px;
-    left: 678px;
+    left: 663px;
 }
 
 .s-middle-top{
@@ -152,12 +152,12 @@
     width: 88px;
     height: 45px;
     position: absolute;
-    left: 661px;
-    top: 341px;
-    transform: rotate(8deg);
+    left: 623px;
+    top: 339px;
+    transform: rotate(-13deg);
 }
 
-.s-middle-top-2{
+/*.s-middle-top-2{
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
@@ -167,7 +167,7 @@
     left: 669px;
     top: 341px;
     transform: rotate(8deg);
-}
+}*/
 
 .yellow-patch-2{
     border: 1px solid yellow;
@@ -177,10 +177,10 @@
     height: 18px;
     position: absolute;
     top: 324px;
-    left: 709px;
+    left: 669px;
 }
 
-.s-middle-top-3{
+/*.s-middle-top-3{
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
@@ -189,9 +189,9 @@
     position: absolute;
     left: 667px;
     top: 342px;
-}
+}*/
 
-.yellow-patch-3{
+/*.yellow-patch-3{
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
@@ -200,7 +200,7 @@
     position: absolute;
     top: 339px;
     left: 714px;
-}
+}*/
 
 .yellow-lower-bottom{
     border: 1px solid yellow;
@@ -209,7 +209,7 @@
     width: 45px;
     height: 18px;
     position: absolute;
-    left: 656px;
+    left: 615px;
     top: 380px;
 }
 
@@ -220,7 +220,7 @@
     width: 54px;
     height: 18px;
     margin-left: 39px;
-    margin-top: 15px;
+    margin-top: 14px;
     transform: rotate(21deg);
 }
 
@@ -228,14 +228,14 @@
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
-    width: 45px;
+    width: 50px;
     height: 18px;
     margin-left: 36px;
-    margin-top: -36px;
+    margin-top: -35px;
     transform: rotate(6deg);
 }
 
-.yellow-little-circle-bottom{
+/*.yellow-little-circle-bottom{
     border: 1px solid yellow;
     background-color: yellow;
     width: 17px;
@@ -243,7 +243,7 @@
     margin-left: 66px;
     margin-top: 23px;
     border-radius: 50%;
-}
+}*/
 
 @media screen and (max-width: 1024px) {
     /*.logo-superman-container{
@@ -264,4 +264,75 @@
         margin-left: 163px;
         transform: rotate(-30deg);
     }*/
+
+    .yellow-patch{
+        left: 678px;
+    }
+
+    .yellow-patch-2{
+        left: 709px;
+    }
+
+    .s-middle-top{
+        left: 661px;
+        top: 341px;
+        transform: rotate(8deg);
+    }
+
+    .s-middle-top-2{
+        border: 1px solid red;
+        background-color: red;
+        border-radius: 50%;
+        width: 88px;
+        height: 45px;
+        position: absolute;
+        left: 669px;
+        top: 341px;
+        transform: rotate(8deg);
+    }
+
+    .s-middle-top-3{
+        border: 1px solid red;
+        background-color: red;
+        border-radius: 50%;
+        width: 88px;
+        height: 45px;
+        position: absolute;
+        left: 667px;
+        top: 342px;
+    }
+
+    .yellow-patch-3{
+        border: 1px solid yellow;
+        background-color: yellow;
+        border-radius: 50%;
+        width: 46px;
+        height: 18px;
+        position: absolute;
+        top: 339px;
+        left: 714px;
+    }
+
+    .yellow-lower-bottom{
+        left: 656px;
+    }
+
+    .yellow-lower-left-bottom{
+        margin-top: 15px;
+    }
+
+    .red-lower-left-bottom{
+        width: 45px;
+        margin-top: -36px;
+    }
+
+    .yellow-little-circle-bottom{
+        border: 1px solid yellow;
+        background-color: yellow;
+        width: 17px;
+        height: 10px;
+        margin-left: 66px;
+        margin-top: 23px;
+        border-radius: 50%;
+    }
 }

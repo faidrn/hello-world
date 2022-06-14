@@ -139,9 +139,9 @@
     border: 1px solid var(--grey-logo);
     position: absolute;
     height: 50px;
-    top: 44px;
+    top: 45px;
     left: 0;
-    width: 33px;
+    width: 30px;
     /*clip-path: polygon(esquina superior izquierda (x,y), esquina superior derecha(x,y),  
             esquina inferior derecha(x,y), esquina inferior izquierda(x,y));*/
     clip-path: polygon(0 7%, 100% 20%, 100% 45%, 0 27%);
@@ -160,6 +160,10 @@
 @media screen and (max-width: 1024px) {
     .number-container{
         left: 17.6%;
+    }
 
+    .number-bottom-grey{
+        top: 44px;
+        width: 33px;
     }
 }
