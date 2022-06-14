@@ -28,6 +28,17 @@ body{
     width: 1000px;
     margin-bottom: 22px;
 }
+/*.language{
+    background-color: #EDBB99;
+}
+
+.spanish::before{
+    content: "Español";
+}
+
+.spanish{
+    text-decoration: none;
+}*/
 
 .title{
     font-size: 45px;
@@ -190,18 +201,14 @@ body{
 }
 
 @media screen and (max-width: 280px) {
-    .language{
+    /*.language{
         margin-top: 1px;
         border: 1px solid #E74C3C;
         border-radius: 10px;
         width: 90%;
         text-align: center;
         margin-left: 12px;
-    }
-
-    .spanish::before{
-        content: "Español";
-    }
+    }*/
 
     .container{
         width: 237px;
