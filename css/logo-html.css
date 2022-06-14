@@ -157,7 +157,7 @@
     left: 0;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1366px) {
     .number-container{
         left: 17.6%;
     }

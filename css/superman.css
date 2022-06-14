@@ -245,26 +245,7 @@
     border-radius: 50%;
 }*/
 
-@media screen and (max-width: 1024px) {
-    /*.logo-superman-container{
-        width: 15%;
-    }
-
-    .logo-inner{
-        width: 91%;
-    }*/
-
-    /*.red-tip{
-        border: 1px solid red;
-        background-color: red;
-        border-radius: 50% 50% 0 0;
-        width: 8px;
-        height: 25px;
-        margin-top: -12px;
-        margin-left: 163px;
-        transform: rotate(-30deg);
-    }*/
-
+@media screen and (max-width: 1366px) {
     .yellow-patch{
         left: 678px;
     }
