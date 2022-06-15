@@ -77,3 +77,12 @@ body{
     margin-top: 1vw;
     color: aliceblue;
 }
+
+.author {
+    margin-top: -10vh;    
+    width: 50%;
+}
+
+.author p{
+    font-size: 24px;
+}
