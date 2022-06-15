@@ -16,6 +16,7 @@ body{
     place-items: center;
     height: 100vh;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container-book{
@@ -72,7 +73,7 @@ body{
 }
 
 .front-book p{
-    font-size: 4vw;
+    font-size: 3vw;
     text-align: center;
     margin-top: 1vw;
     color: aliceblue;
@@ -80,9 +81,10 @@ body{
 
 .author {
     margin-top: -10vh;    
-    width: 50%;
+    display: grid;
+    place-items: center;
 }
 
 .author p{
-    font-size: 24px;
+    font-size: 18px;
 }
