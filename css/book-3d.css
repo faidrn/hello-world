@@ -1,0 +1,79 @@
+:root{
+    --green: #148F77;
+    --blue-0: #AED6F1;
+    --blue-1: #85C1E9;
+    --blue-2: #5DADE2;
+    --blue-3: #3498DB;
+    --front-book-color: #2874A6;
+}
+
+*{
+    transform-style: preserve-3d;
+}
+
+body{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container-book{
+    transform: rotateX(60deg)
+                rotateZ(45deg);
+    width: 50vw;
+    height: 50vw;
+    background: var(--green);
+}
+
+.bottom{
+    width: 30vw;
+    height: 20vw;
+    background: var(--blue-0);
+    transform: translateY(30vw);
+}
+
+.top{
+    width: 30vw;
+    height: 20vw;
+    background: var(--blue-1);
+    transform: translateY(10vw)
+                translateZ(3vw);
+}
+
+.left{
+    width: 30vw;
+    height: 3vw;
+    background: var(--blue-2);
+    transform-origin: bottom left;
+    transform: rotateX(-90deg)
+                translateZ(7vw);
+}
+
+.front{
+    width: 20vw;
+    height: 3vw;
+    background: var(--blue-3);
+    transform-origin: bottom left;
+    transform: rotateX(-90deg) 
+                rotateY(90deg)
+                translateZ(30vw)
+                translateX(-4vw);
+}
+
+.front-book{
+    transform: rotateZ(-90deg)
+                translateY(-1vw)
+                translateX(-4vw);
+    width: 17vw;
+    height: 12vw;
+    background: var(--front-book-color);
+    border: 2px solid white;
+}
+
+.front-book p{
+    font-size: 4vw;
+    text-align: center;
+    margin-top: 1vw;
+    color: aliceblue;
+}
