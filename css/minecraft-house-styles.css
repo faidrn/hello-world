@@ -1,0 +1,70 @@
+:root{
+    --green-color: #186A3B;
+    --stairs-color: peru;
+    --ground-color: SandyBrown;
+    --color-brick: FireBrick;
+    --fence-height: 15vh;
+    --fence-front-height: 5vh;
+    /*--fence-top-depth:;*/
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background: var(--green-color);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden; /*ocultar el contenido desbordado*/
+    background-repeat: no-repeat;
+    /*background-size=define el tamaño de la imagen de fondo; 
+    cover= cambia el tamaño de la imagen de fondo para asegurarse de que el elemento esté completamente cubierto*/
+    background-size: cover; 
+}
+
+.container{
+    background: var(--ground-color);
+    width: 60vw;
+    height: 60vw;
+    /*
+    transform= define como transformar el elemento,
+    perspective= esta propiedad determina la distancia entre el plano z=0 y el usuario para dar cierta perspectiva a un 
+    elemento posicionado en 3D,
+    rotateX= gira un elemento en el eje X,
+    rotateZ= gira un elemento en el eje Z,
+    translateZ= mueve el elemento en el eje Z
+    */
+    transform: perspective(10000px)
+             rotateX(78deg)
+             rotateZ(34deg)
+             translateZ(-8vw);
+}
+
+.fence1{
+    border: 1px solid red;
+    height: var(--fence-height);
+    transform: translateY(53vw);
+}
+
+.fence1-front{
+    border: 1px solid var(--color-brick);
+    height: var(--fence-height);
+    background: var(--color-brick);
+    transform: rotateZ(-35deg) 
+            rotateX(41deg) 
+            rotateY(46deg) 
+            translateZ(-2vw) 
+            translateX(-5vw);
+    width: 43vw;
+}
+
+.fence1-top{
+    border: 1px solid var(--color-brick);
+    background: white;/*var(--color-brick);*/
+    height: 5vw;
+    transform: translateY(10vw)
+                translateZ(3vw);
+}
