@@ -80,11 +80,12 @@ body{
 }
 
 .author {
-    margin-top: -10vh;    
+    margin-top: -13vh;    
     display: grid;
     place-items: center;
 }
 
 .author p{
-    font-size: 18px;
+    font-size: 3vh;
+    text-align: center;
 }

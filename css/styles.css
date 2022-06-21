@@ -65,11 +65,20 @@ body{
     color: var(--blue-color-a);
 }
 
+
+.code{
+    margin-top: -22vh;
+}
+
+.code p{
+    font-size: 3vh;
+}
+
 .author{
     font-size: 16px;
 }
 
-.author a{
+.code a, .author a{
     text-decoration: none;
     color: #1A5276;
 }
