@@ -10,10 +10,18 @@
     margin: 0;
 }
 
+body{
+    display: grid;
+    text-align: center;
+    justify-content: center;
+}
+
+#html5{
+    border: 1px solid red;
+}
+
 .logo{
-    margin-top: 55px;
-    width: 150px;
-    margin-left: 200px;
+    margin-top: 4vw;
     display: flex;
     flex-direction: column;
     align-items: center; /*centrado vertical*/
@@ -22,15 +30,15 @@
 .logo-title{
     font-family: 'Secular One', sans-serif;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 3vw;
 }
 
 .logo-container{
     /*clip-path: propiedad q permite hacer formas complejas como poligonos*/
     background: var(--color-logo-bg);
     border: 1px solid var(--color-logo-bg);
-    width: 100px;
-    height: 17vh;
+    width: 11vw;
+    height: 25vh;
     /*pentangono ==> clip-path: polygon(esquina superior derecha, esquina inferior derecha, centro, 
                 esquina inferior izquierda, esquina superior izquierda);*/
     clip-path: polygon(100% 0, 94% 83%, 50% 100%, 5% 85%, 0 0);
@@ -41,9 +49,9 @@
     border: 1px solid var(--light-color-logo);
     position: relative;
     left: 50%;
-    top: 10px;
-    width: 38%;
-    height: 13vh;
+    top: 1.5vw;
+    width: 4vw;
+    height: 19vh;
     /*clip-path: polygon(esquina superior izquierda, esquina superior derecha,  
                 esquina inferior derecha, esquina inferior izquierda);*/
     clip-path: polygon(0 0, 100% 0%, 91% 83%, 0% 100%);
@@ -51,10 +59,10 @@
 
 .number-container{
     position: absolute;
-    left: 19%;
-    height: 10.5vh;
-    top: 119px;
-    width: 4.9%;
+    left: 46.4vw;
+    height: 14.5vh;
+    top: 11.5vw;
+    width: 7vw;
     /*pentangono ==> clip-path: polygon(esquina superior derecha, esquina inferior derecha, centro, 
                 esquina inferior izquierda, esquina superior izquierda);*/
     clip-path: polygon(100% 0, 94% 83%, 50% 100%, 5% 85%, 0 0);
@@ -63,10 +71,10 @@
 .number-top-grey{
     background: var(--grey-logo);
     border: 1px solid var(--grey-logo);
-    top: 0;
-    height: 11px;
-    left: 0;
-    width: 50%;
+    /*top: 0;*/
+    height: 2vh;
+    /*left: 0;*/
+    width: 3.5vw;
 }
 
 .number-top-white{
@@ -74,18 +82,18 @@
     border: 1px solid var(--white);
     position: absolute;
     top: 0;
-    height: 11px;
-    left: 51%;
-    width: 49%;
+    height: 2vh;
+    left: 3.5vw;
+    width: 3.5vw;
 }
 
 .number-left-top-grey{
     background: var(--grey-logo);
     border: 1px solid var(--grey-logo);
-    height: 16px;
-    width: 45px;
-    margin-top: -1px;
-    left: 0;
+    height: 2.1vh;
+    width: 4vw;
+    margin-top: -0.1vh;
+    /*left: 0;*/
     /*clip-path: polygon(esquina superior izquierda, esquina superior derecha,  
             esquina inferior derecha, esquina inferior izquierda);*/
     clip-path: polygon(0 0, 30% 0, 35% 100%, 0 100%);
@@ -157,7 +165,7 @@
     left: 0;
 }
 
-@media screen and (max-width: 1366px) {
+/*@media screen and (max-width: 1366px) {
     .number-container{
         left: 17.6%;
     }
@@ -166,4 +174,4 @@
         top: 45px;
         width: 33px;
     }
-}
+}*/
