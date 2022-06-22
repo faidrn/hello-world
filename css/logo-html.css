@@ -102,16 +102,16 @@ body{
 .number-middle-grey{
     background: var(--grey-logo);
     border: 1px solid var(--grey-logo);
-    height: 11px;
-    margin-top: -4px;
+    height: 2vh;
+    /*margin-top: -4px;*/
     width: 50%;
 }
 
 .number-middle-white{
     background: var(--white);
     border: 1px solid var(--white);
-    height: 11px;
-    margin-top: -13px;
+    height: 2vh;
+    margin-top: -2.4vh;
     margin-left: 51%;
     width: 45%;
 }
@@ -119,9 +119,9 @@ body{
 .number-right-white{
     background: var(--white);
     border: 1px solid var(--white);
-    height: 18px;
-    width: 36px;
-    margin-left: 39%;
+    height: 6vh;
+    width: 5vw;
+    margin-left: 2vw;
     /*clip-path: polygon(esquina superior izquierda (x,y), esquina superior derecha(x,y),  
             esquina inferior derecha(x,y), esquina inferior izquierda(x,y));*/
     clip-path: polygon(70% 0, 100% 0, 100% 100%, 65% 100%);
@@ -130,10 +130,10 @@ body{
 .number-bottom-white{
     background: var(--white);
     border: 1px solid var(--white);
-    height: 61px;
+    height: 12.5vh;
     margin-left: 51%;
-    margin-top: -22px;
-    width: 48px;
+    margin-top: -5vh;
+    width: 5vw;
      /*clip-path: polygon(
          esquina superior izquierda (x,y), 
          esquina superior derecha(x,y),  
@@ -146,10 +146,10 @@ body{
     background: var(--grey-logo);
     border: 1px solid var(--grey-logo);
     position: absolute;
-    height: 50px;
-    top: 45px;
-    left: 0;
-    width: 30px;
+    height: 12vh;
+    top: 9.2vh;
+    /*left: 0;*/
+    width: 50%;
     /*clip-path: polygon(esquina superior izquierda (x,y), esquina superior derecha(x,y),  
             esquina inferior derecha(x,y), esquina inferior izquierda(x,y));*/
     clip-path: polygon(0 7%, 100% 20%, 100% 45%, 0 27%);
@@ -159,10 +159,10 @@ body{
     background: var(--grey-logo);
     border: 1px solid var(--grey-logo);
     position: absolute;
-    width: 13px;
-    height: 22px;
-    bottom: 0px;
-    left: 0;
+    width: 1.2vw;
+    height: 3vh;
+    bottom: 3vh;
+    left: 0.3vw;
 }
 
 /*@media screen and (max-width: 1366px) {
@@ -175,3 +175,81 @@ body{
         width: 33px;
     }
 }*/
+
+@media screen and (max-width: 912px) {
+    .logo-title{
+        font-size: 5vw;
+    }
+
+    .logo-container{
+        width: 19vw;
+        height: 16vh;
+    }
+
+    .light-logo{
+        top: 2vw;
+        width: 7vw;
+        height: 13vh;
+    }
+
+    .number-container{
+        left: 44vw;
+        height: 10vh;
+        top: 16vw;
+        width: 12vw;
+    }
+
+    .number-top-grey{
+        height: 1.6vh;
+        width: 50%;
+    }
+
+    .number-top-white{
+        height: 1.6vh;
+        left: 50%;
+        width: 50%;
+    }
+
+    .number-left-top-grey{
+        height: 1.6vh;
+        width: 7vw;
+        margin-top: -0.1vh;
+    }
+
+    .number-middle-grey{
+        height: 1.6vh;
+        margin-top: -0.1vh;
+    }
+
+    .number-middle-white{
+        height: 1.6vh;
+        margin-top: -1.7vh;
+    }
+
+    .number-right-white{
+        height: 4vh;
+        width: 7vw;
+        margin-left: 4.3vw;
+        margin-top: -0.1vh;
+    }
+
+    .number-bottom-white{
+        height: 16vh;
+        margin-top: -6.7vh;
+        width: 5vw;
+        transform: rotateX(56deg);
+    }
+    
+    .number-bottom-grey{
+        top: 6vh;
+        width: 51%;
+    }
+
+    .number-bottom-left-grey{
+        width: 2vw;
+        height: 2vh;
+        bottom: 2vh;
+    }
+}
+
+@media screen and (max-width: 540px) {}
