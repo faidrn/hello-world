@@ -161,6 +161,10 @@ body{
     left: 0.3vw;
 }
 
+.code{
+    margin-top: 5vh;
+}
+
 @media screen and (max-width: 912px) {
     .logo-title{
         font-size: 5vw;
