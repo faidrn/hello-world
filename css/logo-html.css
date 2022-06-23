@@ -16,10 +16,6 @@ body{
     justify-content: center;
 }
 
-#html5{
-    border: 1px solid red;
-}
-
 .logo{
     margin-top: 4vw;
     display: flex;
@@ -103,7 +99,7 @@ body{
     background: var(--grey-logo);
     border: 1px solid var(--grey-logo);
     height: 2vh;
-    /*margin-top: -4px;*/
+    margin-top: -0.1vh;
     width: 50%;
 }
 
@@ -111,7 +107,7 @@ body{
     background: var(--white);
     border: 1px solid var(--white);
     height: 2vh;
-    margin-top: -2.4vh;
+    margin-top: -2.3vh;
     margin-left: 51%;
     width: 45%;
 }
@@ -165,17 +161,6 @@ body{
     left: 0.3vw;
 }
 
-/*@media screen and (max-width: 1366px) {
-    .number-container{
-        left: 17.6%;
-    }
-
-    .number-bottom-grey{
-        top: 45px;
-        width: 33px;
-    }
-}*/
-
 @media screen and (max-width: 912px) {
     .logo-title{
         font-size: 5vw;
@@ -222,7 +207,7 @@ body{
     }
 
     .number-middle-white{
-        height: 1.6vh;
+        height: 2vw;
         margin-top: -1.7vh;
     }
 
@@ -252,4 +237,105 @@ body{
     }
 }
 
-@media screen and (max-width: 540px) {}
+@media screen and (max-width: 540px) {
+    body{
+        width: 140vw;
+    }
+
+    #html5{
+        width: 100%;
+    }
+
+    .number-container{
+        left: 64vw;
+    }
+
+    .number-right-white{
+        height: 3vh;
+    }
+
+    .number-bottom-white{
+        transform: rotateX(63deg);
+    }
+
+    .number-bottom-left-grey{
+        height: 1.3vh;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    body{
+        width: 183vw;
+    }
+
+    .logo{
+        margin-top: 8vw;
+    }
+
+    .logo-title{
+        font-size: 10vw;
+    }
+
+    .logo-container{
+        width: 32vw;
+        height: 21vh;
+    }
+
+    .light-logo {
+        top: 3vw;
+        width: 12vw;
+        height: 17vh;
+    }
+
+    .number-container{
+        left: 82vw;
+        top: 31vw;
+        width: 19vw;
+        height: 12.5vh;
+    }
+
+    .number-top-grey {
+        height: 2vh;
+    }
+
+    .number-top-white{
+        height: 2vh;
+    }
+
+    .number-left-top-grey {
+        height: 2vh;
+        width: 11vw;
+    }
+
+    .number-middle-grey {
+        height: 2vh;
+    }
+
+    .number-middle-white {
+        height: 3vw;
+        margin-top: -2.3vh;
+    }
+
+    .number-right-white{
+        width: 10vw;
+        margin-left: 8vw;
+        height: 5vh;
+    }
+
+    .number-bottom-white{
+        clip-path: polygon(0 8%, 100% 0, 100% 20%, 0 28%);
+        transform: rotateX(0);
+        margin-top: -2.6vh;
+    }
+
+    .number-bottom-grey{
+        top: 8vh;
+        height: 10vh;
+    }
+
+    .number-bottom-left-grey {
+        height: 2.4vh;
+        width: 3.1vw;
+        bottom: 2vh;
+    }
+}
