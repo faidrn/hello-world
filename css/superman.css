@@ -17,46 +17,38 @@
     border: 1px solid red;
     background-color: red;
     clip-path: polygon(15% 0, 85% 0, 100% 27%, 50% 100%, 0 27%);
-    width: 16%;
+    width: 17vw;
     height: 20vh;
-    border-radius: 40px;
+    margin-top: 1vw;
 }
 
 .logo-inner{
     border: 1px solid red;
     background: yellow;
     clip-path: polygon(15% 0, 85% 0, 100% 27%, 50% 100%, 0 27%);
-    width: 90%;
+    width: 15vw;
     margin: 5px 10px 10px 9px;
     height: 17.5vh;
+    margin-left: 1vw;
 }
 
 .big-red-circle{
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
-    width: 165px;
-    height: 106px;
-    margin-left: 8px;
-    margin-top: -9px;
-}
-
-.left-corner-higher{
-    width: 8px;
-    height: 48px;
-    margin-left: 13px;
-    margin-top: -10px;
-    clip-path: polygon(0 0, 100% 0%, 60% 19%, 48% 50%, 64% 86%, 100% 100%, 0 100%);
-    transform: rotate(41deg);
+    width: 13vw;
+    height: 15vh;
+    margin-left: 1vw;
+    margin-top: -1vh;
 }
 
 .top-right-corner-higher{
     border: 1px solid red;
     background-color: yellow;
-    width: 48px;
-    height: 10px;
-    margin-top: -100px;
-    margin-left: 109px;
+    width: 4vw;
+    height: 2vh;
+    margin-top: -15vh;
+    margin-left: 8.3vw;
     clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 0);
     border-radius: 0 0 50% 0;
 }
@@ -64,19 +56,23 @@
 .red-square{
     border: 1px solid red;
     background-color: red;
-    width: 25px;
-    height: 25px;
-    margin-top: -12px;
-    margin-left: 143px;
+    width: 1vw;
+    height: 3vh;
+    margin-top: -2vh;
+    margin-left: 12vw;
 }
 
 .yellow-ellipse{
     background-color: yellow;
     border-radius: 50% 50% 0 0;
-    width: 8px;
+    /*width: 8px;
     height: 25px;
     margin-top: -22px;
-    margin-left: 166px;
+    margin-left: 166px;*/
+    width: 1vw;
+    height: 22vh;
+    margin-top: -5.4vh;
+    margin-left: 18vw;
     transform: rotate(-30deg);
 }
 
@@ -84,31 +80,31 @@
     border: 1px solid red;
     background-color: red;
     border-radius: 50% 50% 0 0;
-    width: 8px;
-    height: 25px;
-    margin-top: -12px;
-    margin-left: 163px;
-    transform: rotate(-30deg);
+    width: 1vw;
+    height: 3vh;
+    margin-top: -39vh;
+    margin-left: 12.3vw;
+    transform: rotate(-22deg);
 }
 
 .second-yellow-ellipse{
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
-    width: 87px;
-    height: 25px;
-    margin-top: -38px;
-    margin-left: 55px;
+    width: 7vw;
+    height: 4vh;
+    margin-top: -4vh;
+    margin-left: 4vw;
 }
 
 .right-yellow-ellipse{
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
-    width: 79px;
-    height: 25px;
-    margin-top: -24px;
-    margin-left: 88px;
+    width: 6vw;
+    height: 4vh;
+    margin-top: -3.6vh;
+    margin-left: 7vw;
     transform: rotate(14deg);
 }
 
@@ -116,11 +112,11 @@
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
-    width: 55px;
-    height: 25px;
-    margin-top: -11px;
-    margin-left: 130px;
-    transform: rotate(49deg);
+    width: 4vw;
+    height: 5vh;
+    margin-top: -2vh;
+    margin-left: 10vw;
+    transform: rotate(54deg);
 }
 
 .red-ellipse{
@@ -245,7 +241,15 @@
     border-radius: 50%;
 }*/
 
-@media screen and (max-width: 1366px) {
+.code-logo-superman{
+    margin-top: 5vh;
+}
+
+.notice{
+    margin-top: 5vh;
+}
+
+/*@media screen and (max-width: 1366px) {
     .logo-inner{
         width: 89%;
         margin: 5px 10px 10px 11px;
@@ -289,7 +293,6 @@
     }
 
     .yellow-patch{
-        /*left: 678px;*/
         border: none;
         border-radius: 0%;
         width: 0px;
@@ -299,7 +302,6 @@
     }
 
     .yellow-patch-2{
-        /*left: 709px;*/
         border: none;
         border-radius: 0%;
         width: 0px;
@@ -326,28 +328,6 @@
         transform: rotate(8deg);
     }
 
-    /*.s-middle-top-3{
-        border: 1px solid red;
-        background-color: red;
-        border-radius: 50%;
-        width: 88px;
-        height: 45px;
-        position: absolute;
-        left: 667px;
-        top: 342px;
-    }*/
-
-    /*.yellow-patch-3{
-        border: 1px solid yellow;
-        background-color: yellow;
-        border-radius: 50%;
-        width: 46px;
-        height: 18px;
-        position: absolute;
-        top: 339px;
-        left: 714px;
-    }*/
-
     .yellow-lower-bottom{
         left: 656px;
     }
@@ -372,4 +352,4 @@
         margin-top: 22px;
         border-radius: 50%;
     }
-}
+}*/
