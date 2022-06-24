@@ -65,10 +65,6 @@
 .yellow-ellipse{
     background-color: yellow;
     border-radius: 50% 50% 0 0;
-    /*width: 8px;
-    height: 25px;
-    margin-top: -22px;
-    margin-left: 166px;*/
     width: 1vw;
     height: 22vh;
     margin-top: -5.4vh;
@@ -152,51 +148,6 @@
     top: 71.2vh;
     transform: rotate(-13deg);
 }
-
-/*.s-middle-top-2{
-    border: 1px solid red;
-    background-color: red;
-    border-radius: 50%;
-    width: 88px;
-    height: 45px;
-    position: absolute;
-    left: 669px;
-    top: 341px;
-    transform: rotate(8deg);
-}*/
-
-.yellow-patch-2{
-    /*border: 1px solid yellow;
-    background-color: yellow;
-    border-radius: 50%;
-    width: 40px;
-    height: 18px;
-    position: absolute;
-    top: 324px;
-    left: 669px;*/
-}
-
-/*.s-middle-top-3{
-    border: 1px solid red;
-    background-color: red;
-    border-radius: 50%;
-    width: 88px;
-    height: 45px;
-    position: absolute;
-    left: 667px;
-    top: 342px;
-}*/
-
-/*.yellow-patch-3{
-    border: 1px solid yellow;
-    background-color: yellow;
-    border-radius: 50%;
-    width: 46px;
-    height: 18px;
-    position: absolute;
-    top: 339px;
-    left: 714px;
-}*/
 
 .yellow-lower-bottom{
     border: 1px solid yellow;
