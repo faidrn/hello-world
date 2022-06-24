@@ -72,7 +72,7 @@
     width: 1vw;
     height: 22vh;
     margin-top: -5.4vh;
-    margin-left: 18vw;
+    margin-left: 15vw;
     transform: rotate(-30deg);
 }
 
@@ -82,9 +82,9 @@
     border-radius: 50% 50% 0 0;
     width: 1vw;
     height: 3vh;
-    margin-top: -39vh;
+    margin-top: -18vh;
     margin-left: 12.3vw;
-    transform: rotate(-22deg);
+    transform: rotate(-24deg);
 }
 
 .second-yellow-ellipse{
@@ -115,7 +115,7 @@
     width: 4vw;
     height: 5vh;
     margin-top: -2vh;
-    margin-left: 10vw;
+    margin-left: 10.2vw;
     transform: rotate(54deg);
 }
 
@@ -123,10 +123,10 @@
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
-    width: 55px;
-    height: 25px;
-    margin-top: -24px;
-    margin-left: 115px;
+    width: 4vw;
+    height: 3vh;
+    margin-top: -3vh;
+    margin-left: 9.3vw;
     transform: rotate(49deg);
 }
 
@@ -134,22 +134,22 @@
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
-    width: 40px;
-    height: 18px;
+    width: 4vw;
+    height: 3vh;
     position: absolute;
-    top: 324px;
-    left: 663px;
+    top: 69vh;
+    left: 51vw;
 }
 
 .s-middle-top{
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
-    width: 88px;
-    height: 45px;
+    width: 7vw;
+    height: 8vh;
     position: absolute;
-    left: 623px;
-    top: 339px;
+    left: 48.1vw;
+    top: 71.2vh;
     transform: rotate(-13deg);
 }
 
@@ -166,14 +166,14 @@
 }*/
 
 .yellow-patch-2{
-    border: 1px solid yellow;
+    /*border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
     width: 40px;
     height: 18px;
     position: absolute;
     top: 324px;
-    left: 669px;
+    left: 669px;*/
 }
 
 /*.s-middle-top-3{
@@ -202,21 +202,21 @@
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
-    width: 45px;
-    height: 18px;
+    width: 5vw;
+    height: 3vh;
     position: absolute;
-    left: 615px;
-    top: 380px;
+    left: 48vw;
+    top: 76.1vh;
 }
 
 .yellow-lower-left-bottom{
     border: 1px solid yellow;
     background-color: yellow;
     border-radius: 50%;
-    width: 54px;
-    height: 18px;
-    margin-left: 39px;
-    margin-top: 14px;
+    width: 5vw;
+    height: 3vh;
+    margin-left: 2.9vw;
+    margin-top: -0.5vh;
     transform: rotate(21deg);
 }
 
@@ -224,22 +224,22 @@
     border: 1px solid red;
     background-color: red;
     border-radius: 50%;
-    width: 50px;
-    height: 18px;
-    margin-left: 36px;
-    margin-top: -35px;
+    width: 5vw;
+    height: 2.8vh;
+    margin-left: 2vw;
+    margin-top: -5vh;
     transform: rotate(6deg);
 }
 
-/*.yellow-little-circle-bottom{
+.yellow-little-circle-bottom{
     border: 1px solid yellow;
     background-color: yellow;
-    width: 17px;
-    height: 10px;
-    margin-left: 66px;
-    margin-top: 23px;
+    width: 1.3vw;
+    height: 2vh;
+    margin-left: 5vw;
+    margin-top: 3.3vh;
     border-radius: 50%;
-}*/
+}
 
 .code-logo-superman{
     margin-top: 5vh;
