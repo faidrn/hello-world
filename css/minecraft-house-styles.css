@@ -62,16 +62,6 @@ body{
     overflow: hidden; /*ocultar el contenido desbordado*/
 }
 
-.fence1-top{
-    border: 1px solid var(--color-brick);
-    background: white;/*var(--color-brick);*/
-    height: 5vw;
-    transform: translateY(-9.5vw)
-                translateX(-3.5vw)
-                rotateZ(1deg);
-    width: 37vw;
-}
-
 .fence1-front-brick1{
     border: 4px solid white;
     width: 2vw;
@@ -82,17 +72,98 @@ body{
 }
 
 .fence1-front-brick1-js{
-    margin-top: -7vh;
+    /*margin-top: -7vh;*/
 }
 
 .fence1-front-brick2{
     border: 4px solid white;
     width: 2vw;
     height: 3vw;
-    margin-left: 0;
+    /*margin-left: 0;*/
+    transform: translateY(-65vw)
+                translateX(0vw);
 }
 
 .fence1-front-brick2-js{
+    /*margin-top: -7vh;*/
+}
+
+.fence1-top{
+    border: 1px solid var(--color-brick);
+    background: var(--color-brick);
+    height: 5vw;
+    transform: translateY(-9.5vw)
+                translateX(-3.5vw)
+                rotateZ(1deg);
+    width: 37vw;
+    overflow: hidden; /*ocultar el contenido desbordado*/
+}
+
+.fence1-top-row-top{
+    width: 37vw;
+    height: 1vw;
+    transform: translateY(0vw)
+                translateX(-0.1vw)
+                rotateZ(0deg);
+    border: 1px solid black;
+}
+
+.fence1-top-brick1{
+    border: 4px solid white;
+    width: 2vw;
+    height: 1vw;
+}
+
+.fence1-top-brick1-js{
+    /*margin-top: -3vh;
+    /*transform: rotateZ(0deg);*/
+}
+
+.fence1-top-row-middle1{
+    width: 37vw;
+    height: 1vw;
+    /*margin-left: -1.5vw;*/
+    transform: translateX(-1.5vw);
+}
+
+.fence1-top-brick2{
+    border: 4px solid white;
+    width: 2vw;
+    height: 1vw;
+}
+
+.fence1-top-brick2-js{
+    margin-top: -7vh;
+}
+
+.fence1-top-row-middle2{
+    width: 37vw;
+    height: 1vw;
+}
+
+.fence1-top-brick3{
+    border: 4px solid white;
+    width: 2vw;
+    height: 1vw;
+}
+
+.fence1-top-brick3-js{
+    margin-top: -7vh;
+}
+
+.fence1-top-row-bottom{
+    width: 37vw;
+    height: 1vw;
+    transform: translateX(-1.5vw);
+}
+
+.fence1-top-brick4{
+    border: 4px solid white;
+    width: 2vw;
+    height: 1vw;
+}
+
+.fence1-top-brick4-js{
     margin-top: -7vh;
 }
 

@@ -2,44 +2,54 @@
 add code to repeat divs with classes fence1-front-brick1 and fence1-front-brick2
  */
 
-let brick2 = document.getElementsByClassName("fence1-front-brick2")[0];
-
 let marginLeft = 2.3;
 
-for (let i = 0; i <= 20; i++){
-    // Crear nodo de tipo Element
-    let miDiv = document.createElement("div");
+let translateObject = [
+    {translateX: 0.9},
+    {incrementX: 2.4}, 
+    {translateY: -7}, 
+    {incrementY: -7}
+];
 
-    //Agregar atributos
-    miDiv.setAttribute("class", "fence1-front-brick1 fence1-front-brick1-js");
+function addDivs (translateArray, primaryClass, secondClass, idContainer, divNext, addBefore, limit){
+    while (limit >= 0){
+        // Crear nodo de tipo Element
+        let newDiv = document.createElement("div");
     
-    //miDiv.setAttribute("margin-left", marginLeft + "vw");
-    miDiv.style.marginLeft = marginLeft + "vw";
-    marginLeft += 2.2;
-
-    //elegir ubicacion
-    let capa = document.getElementById("fence1-front-id");
-    //agregar
-    //capa.appendChild(miDiv);
-    capa.insertBefore(miDiv, brick2);
+        //Agregar atributos
+        newDiv.setAttribute("class", `${primaryClass} ${secondClass}`);
+        
+        //newDiv.style.marginLeft = marginLeft + "vw";
+        newDiv.style.transform = `translateX(${translateArray[0].translateX}vw) translateY(${translateArray[2].translateY}vh)`;
+        
+        //marginLeft += 2.2;
+        translateArray[0].translateX += translateArray[1].incrementX;
+        translateArray[2].translateY += translateArray[3].incrementY;
+    
+        //elegir ubicacion
+        let containerElement = document.getElementById(idContainer);
+        
+        //agregar
+        if (addBefore){
+            containerElement.insertBefore(newDiv, divNext);
+        } else{
+            containerElement.appendChild(newDiv);
+        }
+        
+        limit -= 1;
+    }    
 }
 
+let divNext = document.getElementsByClassName("fence1-front-brick2")[0];
+addDivs(translateObject, "fence1-front-brick1", "fence1-front-brick1-js", "fence1-front-id", divNext, true, 17);
 
-marginLeft = 2.3;
+translateObject[0].translateX = 2.3;
+addDivs(translateObject, "fence1-front-brick2", "fence1-front-brick2-js", "fence1-front-id", "", false, 18);
 
-for (let i = 0; i <= 20; i++){
-    // Crear nodo de tipo Element
-    let miDiv = document.createElement("div");
 
-    //Agregar atributos
-    miDiv.setAttribute("class", "fence1-front-brick2 fence1-front-brick2-js");
-    
-    miDiv.style.marginLeft = marginLeft + "vw";
-    marginLeft += 2.2;
+translateObject[0].translateX = 2.4;
+divNext = document.getElementsByClassName("fence1-top-row-middle1")[0];
+//addDivs(translateObject, "fence1-top-brick1", "fence1-top-brick1-js", "fence1-top-id-top", divNext, false, 18);
 
-    //elegir ubicacion
-    let capa = document.getElementById("fence1-front-id");
-    //agregar
-    capa.appendChild(miDiv);
-    //capa.insertBefore(miDiv, brick2);
-}
+divNext = document.getElementsByClassName("fence1-top-brick3")[0];
+//addDivs(translateObject, "fence1-top-brick4", "fence1-top-brick4-js", "fence1-top-id-bottom", "", false, 18);
