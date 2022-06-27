@@ -2,13 +2,11 @@
 add code to repeat divs with classes fence1-front-brick1 and fence1-front-brick2
  */
 
-let marginLeft = 2.3;
-
 let translateObject = [
-    {translateX: 0.9},
-    {incrementX: 2.4}, 
-    {translateY: -7}, 
-    {incrementY: -7}
+    {translateX: 0.7},
+    {incrementX: 2.1}, 
+    {translateY: 0.8}, 
+    {incrementY: 0.8}
 ];
 
 function addDivs (translateArray, primaryClass, secondClass, idContainer, divNext, addBefore, limit){
@@ -17,12 +15,14 @@ function addDivs (translateArray, primaryClass, secondClass, idContainer, divNex
         let newDiv = document.createElement("div");
     
         //Agregar atributos
-        newDiv.setAttribute("class", `${primaryClass} ${secondClass}`);
+        if (secondClass != ""){
+            newDiv.setAttribute("class", `${primaryClass} ${secondClass}`);
+        } else{
+            newDiv.setAttribute("class", `${primaryClass}`);
+        }
         
-        //newDiv.style.marginLeft = marginLeft + "vw";
         newDiv.style.transform = `translateX(${translateArray[0].translateX}vw) translateY(${translateArray[2].translateY}vh)`;
         
-        //marginLeft += 2.2;
         translateArray[0].translateX += translateArray[1].incrementX;
         translateArray[2].translateY += translateArray[3].incrementY;
     
@@ -40,16 +40,34 @@ function addDivs (translateArray, primaryClass, secondClass, idContainer, divNex
     }    
 }
 
+function getPositions (translateX, incrementX, translateY, incrementY){
+    translateObject = [
+        {translateX: translateX},
+        {incrementX: incrementX}, 
+        {translateY: translateY}, 
+        {incrementY: incrementY}
+    ];
+
+    return translateObject;
+}
+
+
 let divNext = document.getElementsByClassName("fence1-front-brick2")[0];
-addDivs(translateObject, "fence1-front-brick1", "fence1-front-brick1-js", "fence1-front-id", divNext, true, 17);
+addDivs(translateObject, "fence1-front-brick1", "", "fence1-front-id", divNext, true, 17);
 
-translateObject[0].translateX = 2.3;
-addDivs(translateObject, "fence1-front-brick2", "fence1-front-brick2-js", "fence1-front-id", "", false, 18);
+translateObject = getPositions(2.3, translateObject[1].incrementX, translateObject[2].translateY, translateObject[3].incrementY);
+addDivs(translateObject, "fence1-front-brick2", "", "fence1-front-id", "", false, 16);
 
 
-translateObject[0].translateX = 2.4;
-divNext = document.getElementsByClassName("fence1-top-row-middle1")[0];
-//addDivs(translateObject, "fence1-top-brick1", "fence1-top-brick1-js", "fence1-top-id-top", divNext, false, 18);
 
-divNext = document.getElementsByClassName("fence1-top-brick3")[0];
-//addDivs(translateObject, "fence1-top-brick4", "fence1-top-brick4-js", "fence1-top-id-bottom", "", false, 18);
+translateObject = getPositions(2.4, translateObject[1].incrementX, 0, -3);
+divNext = document.getElementsByClassName("fence1-top-row-middle")[0];
+addDivs(translateObject, "fence1-top-brick1", "", "fence1-top-id-top", divNext, false, 14);
+
+
+translateObject = getPositions(2.4, translateObject[1].incrementX, 0, -3);
+addDivs(translateObject, "fence1-top-brick2", "", "fence1-top-id-middle", "", false, 14);
+
+
+translateObject = getPositions(2.4, translateObject[1].incrementX, 0, -3);
+addDivs(translateObject, "fence1-top-brick3", "", "fence1-top-id-bottom", "", false, 14);

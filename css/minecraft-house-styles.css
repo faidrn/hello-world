@@ -3,14 +3,32 @@
     --stairs-color: peru;
     --ground-color: SandyBrown;
     --color-brick: FireBrick;
-    --fence-height: 7vw;
+    --color-grey-light-shadow: #D7DBDD;
+    --color-grey-middle-shadow: #ABB2B9;
+    --color-grey-hard-shadow: #979A9A;
+    --color-stairs: BurlyWood;
+    --fence-height: 3vw;
     --fence-front-height: 5vh;
     /*--fence-top-depth:;*/
+    --border-brick: 3px;
 }
 
 *{
     margin: 0;
     padding: 0;
+}
+
+/* POSITIONS */
+
+.absolute {
+    position: absolute;
+  }
+
+
+  /* MAIN STRUCTURE */
+
+* {
+    transform-style: preserve-3d; /*permite hacer dibujos 3D*/
 }
 
 body{
@@ -43,130 +61,263 @@ body{
              translateZ(-8vw);
 }
 
-.fence1{
-    border: 1px solid red;
+/* .fence1{
     height: var(--fence-height);
     transform: translateY(53vw);
-}
+} */
 
 .fence1-front{
     border: 1px solid var(--color-brick);
-    height: var(--fence-height);
+    height: 1.5vw;
     background: var(--color-brick);
-    transform: rotateZ(-35deg) 
-            rotateX(44deg) 
-            rotateY(46deg) 
-            translateZ(-2vw) 
-            translateX(-5vw);
-    width: 43vw;
-    overflow: hidden; /*ocultar el contenido desbordado*/
+    transform: rotateX(90deg) 
+                translateZ(-59vw) 
+                translateY(0.8vw);
+    width: 37vw;
+    /*overflow: hidden; /*ocultar el contenido desbordado*/
 }
 
-.fence1-front-brick1{
-    border: 4px solid white;
+/* .fence1-front-brick1{
+    border: 2px solid white;
     width: 2vw;
-    height: 3vw;
-    transform: translateY(0vw)
+    height: 0.5vw;
+    transform: translateY(1.2vw)
                 translateX(-1.5vw)
                 rotateZ(1deg);
-}
-
-.fence1-front-brick1-js{
-    /*margin-top: -7vh;*/
 }
 
 .fence1-front-brick2{
     border: 4px solid white;
     width: 2vw;
     height: 3vw;
-    /*margin-left: 0;*/
     transform: translateY(-65vw)
                 translateX(0vw);
-}
-
-.fence1-front-brick2-js{
-    /*margin-top: -7vh;*/
-}
+} */
 
 .fence1-top{
     border: 1px solid var(--color-brick);
     background: var(--color-brick);
     height: 5vw;
-    transform: translateY(-9.5vw)
-                translateX(-3.5vw)
-                rotateZ(1deg);
-    width: 37vw;
-    overflow: hidden; /*ocultar el contenido desbordado*/
+    transform: translateY(49vw)
+                translateX(-4.3vw);
+    width: 37.3vw;
+    /*overflow: hidden; /*ocultar el contenido desbordado*/
 }
 
-.fence1-top-row-top{
+/* .fence1-top-row-top{
     width: 37vw;
     height: 1vw;
-    transform: translateY(0vw)
+    transform: translateY(0.5vw)
                 translateX(-0.1vw)
-                rotateZ(0deg);
-    border: 1px solid black;
+                rotateZ(1deg);
 }
 
 .fence1-top-brick1{
-    border: 4px solid white;
+    border: var(--border-brick) solid white;
     width: 2vw;
     height: 1vw;
 }
 
-.fence1-top-brick1-js{
-    /*margin-top: -3vh;
-    /*transform: rotateZ(0deg);*/
-}
-
-.fence1-top-row-middle1{
+.fence1-top-row-middle{
     width: 37vw;
     height: 1vw;
-    /*margin-left: -1.5vw;*/
-    transform: translateX(-1.5vw);
+    transform: translateX(-1.5vw)
+                translateY(2.2vw)
+                rotateZ(1deg);
 }
 
 .fence1-top-brick2{
-    border: 4px solid white;
+    border: var(--border-brick) solid white;
     width: 2vw;
     height: 1vw;
-}
-
-.fence1-top-brick2-js{
-    margin-top: -7vh;
-}
-
-.fence1-top-row-middle2{
-    width: 37vw;
-    height: 1vw;
-}
-
-.fence1-top-brick3{
-    border: 4px solid white;
-    width: 2vw;
-    height: 1vw;
-}
-
-.fence1-top-brick3-js{
-    margin-top: -7vh;
 }
 
 .fence1-top-row-bottom{
     width: 37vw;
     height: 1vw;
-    transform: translateX(-1.5vw);
+    transform: translateY(3.8vw) 
+                rotateZ(1deg);
 }
 
-.fence1-top-brick4{
-    border: 4px solid white;
+.fence1-top-brick3{
+    border: var(--border-brick) solid white;
     width: 2vw;
     height: 1vw;
+} */
+
+.stairs-left1{
+    width: 3vw;
+    height: 4vw;
+    background: white;
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateX(90deg) 
+                translateX(37.3vw) 
+                translateY(4vw) 
+                translateZ(-56vw);
 }
 
-.fence1-top-brick4-js{
-    margin-top: -7vh;
+.stairs-left-inner-face-1{
+    width: 4vw;
+    height: 4vw;
+    background: var(--color-grey-middle-shadow);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateY(90deg) 
+                translateX(-4vw) 
+                translateY(56vw) 
+                translateZ(40.2vw);
 }
 
+.stairs-front-1{
+    width: 8vw;
+    height: 1vw;
+    background: var(--color-stairs);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateX(90deg) 
+                translateX(40vw) 
+                translateY(0.9vw) 
+                translateZ(-55.1vw);
+    border: 1px solid peru;
+}
+
+.stairs-right1{
+    width: 3vw;
+    height: 4vw;
+    background: white;
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateX(90deg) 
+                translateX(51.3vw) 
+                translateY(4.5vw) 
+                translateZ(-56.9vw);
+}
+
+.fence2-front{
+    border: 1px solid var(--color-brick);
+    height: 1.5vw;
+    width: 7vw;
+    background: var(--color-brick);
+    transform: rotateX(90deg) 
+                translateZ(-60vw) 
+                translateY(1.3vw) 
+                translateX(54.2vw);
+}
+
+.fence2-front2{
+    border: 1px solid var(--color-brick);
+    height: 4vw;
+    width: 1.55vw;
+    background: var(--color-brick);
+    transform: rotateY(90deg) 
+                translateZ(63vw) 
+                translateY(60.5vw) 
+                translateX(-2.4vw);
+}
+
+.fence2-top{
+    border: 1px solid var(--color-brick);
+    background: var(--color-brick);
+    height: 5vw;
+    width: 7.3vw;
+    transform: translateY(49vw)
+                translateX(49vw);
+}
+
+.stairs-right-out-face-1{
+    width: 2.5vw;
+    height: 4vw;
+    background: var(--color-grey-middle-shadow);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateY(90deg) 
+                translateX(-4vw) 
+                translateY(55vw) 
+                translateZ(52.9vw);
+}
+
+.stairs-left1-middel-1{
+    width: 3vw;
+    height: 4vw;
+    background: white;
+    transform: translateX(37.4vw) 
+                translateY(55.2vw) 
+                translateZ(4vw);
+}
+
+.stairs-right1-middel-1{
+    width: 3vw;
+    height: 4vw;
+    background: white;
+    transform: translateX(50vw) 
+                translateY(55.2vw) 
+                translateZ(4vw);
+}
+
+.stairs-top-1{
+    width: 8vw;
+    height: 1.7vw;
+    background: var(--color-stairs);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform: translateX(41vw) 
+                translateY(55vw) 
+                translateZ(1.3vw);
+    border: 1px solid peru;
+}
+
+.stairs-front-2{
+    width: 6.2vw;
+    height: 1vw;
+    background: var(--color-stairs);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateX(90deg) 
+                translateX(46.4vw) 
+                translateY(4.4vw) 
+                translateZ(-60vw);
+    border-top: 1px solid peru;
+    border-bottom: 1px solid peru;
+    border-left: 1px solid peru;
+}
+
+.stairs-top-2{
+    width: 6.1vw;
+    height: 1.7vw;
+    background: var(--color-stairs);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform: translateX(43vw) 
+                translateY(53.3vw) 
+                translateZ(3vw);
+    border: 1px solid peru;
+}
+
+.stairs-front-3{
+    width: 6.1vw;
+    height: 1vw;
+    background: var(--color-stairs);
+    box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+    transform: rotateX(90deg) 
+                translateX(44vw) 
+                translateY(4.3vw) 
+                translateZ(-52vw);
+    border: 1px solid peru;
+}
+
+.wall1{
+    width: 15vw;
+    height: 20vw;
+    background: transparent;
+    border-top: 3vw solid white;
+    border-left: 3vw solid white;
+    border-right: 3vw solid white; 
+    box-sizing: border-box;
+    transform-origin: bottom left;
+    transform: rotateX(45deg) 
+                translateX(10vw) 
+                translateZ(-35vw);
+}
 /*@media screen and (max-width: 820px) {
     :root{
         --fence-height: 7vw;
