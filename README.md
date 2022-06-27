@@ -13,10 +13,19 @@ Final result of the superman's logo.
 
 ![](./screens/superman.png)
 
-# 3D Book
+# 3D Drawings with CSS
 3D drawing with CSS, using the property transform.
 
+## Book in 3D with CSS
+This is part of the #RetosPlatziCSS from Platzi. Using the CSS property transform.
+
 ![](./screens/book-3d.png)
+
+## House in 3D with CSS, style Minecraft
+This is part of the #RetosPlatziCSS from Platzi. Using the CSS property transform.
+
+**currently under coding!**
+
 
 # License
 This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
