@@ -41,6 +41,7 @@ body{
     /*background-size=define el tamaño de la imagen de fondo; 
     cover= cambia el tamaño de la imagen de fondo para asegurarse de que el elemento esté completamente cubierto*/
     background-size: cover; 
+	overflow-y: scroll; /*aactivar el scroll vertical*/
 }
 
 .container{
@@ -66,12 +67,32 @@ body{
     transform: translateY(53vw);
 } */
 
+.fence-left-top{
+	border: 1px solid var(--color-brick);
+    background: var(--color-brick);
+    height: 9vw;
+    transform: translateY(41vw)
+                translateX(-4.3vw);
+    width: 4vw;
+}
+
+.fence-left-inner-face{
+	border: 1px solid var(--color-brick);
+    height: 0.7vw;
+    background: var(--color-brick);
+    transform: rotateZ(90deg) 
+                rotateX(90deg) 
+                translateY(0.6vw) 
+				translateX(50vw);
+    width: 4vw;
+}
+
 .fence1-front{
     border: 1px solid var(--color-brick);
     height: 1.5vw;
     background: var(--color-brick);
     transform: rotateX(90deg) 
-                translateZ(-59vw) 
+                translateZ(-59.2vw) 
                 translateY(0.8vw);
     width: 37vw;
     /*overflow: hidden; /*ocultar el contenido desbordado*/
@@ -85,7 +106,6 @@ body{
                 translateX(-1.5vw)
                 rotateZ(1deg);
 }
-
 .fence1-front-brick2{
     border: 4px solid white;
     width: 2vw;
@@ -98,7 +118,7 @@ body{
     border: 1px solid var(--color-brick);
     background: var(--color-brick);
     height: 5vw;
-    transform: translateY(49vw)
+    transform: translateY(49.4vw)
                 translateX(-4.3vw);
     width: 37.3vw;
     /*overflow: hidden; /*ocultar el contenido desbordado*/
@@ -111,13 +131,11 @@ body{
                 translateX(-0.1vw)
                 rotateZ(1deg);
 }
-
 .fence1-top-brick1{
     border: var(--border-brick) solid white;
     width: 2vw;
     height: 1vw;
 }
-
 .fence1-top-row-middle{
     width: 37vw;
     height: 1vw;
@@ -125,20 +143,17 @@ body{
                 translateY(2.2vw)
                 rotateZ(1deg);
 }
-
 .fence1-top-brick2{
     border: var(--border-brick) solid white;
     width: 2vw;
     height: 1vw;
 }
-
 .fence1-top-row-bottom{
     width: 37vw;
     height: 1vw;
     transform: translateY(3.8vw) 
                 rotateZ(1deg);
 }
-
 .fence1-top-brick3{
     border: var(--border-brick) solid white;
     width: 2vw;
@@ -152,7 +167,7 @@ body{
     box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
     transform-origin: bottom left;
     transform: rotateX(90deg) 
-                translateX(37.3vw) 
+                translateX(37.1vw) 
                 translateY(4vw) 
                 translateZ(-56vw);
 }
@@ -165,7 +180,7 @@ body{
     transform-origin: bottom left;
     transform: rotateY(90deg) 
                 translateX(-4vw) 
-                translateY(56vw) 
+                translateY(56.1vw) 
                 translateZ(40.2vw);
 }
 
@@ -176,8 +191,8 @@ body{
     box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
     transform-origin: bottom left;
     transform: rotateX(90deg) 
-                translateX(40vw) 
-                translateY(0.9vw) 
+                translateX(40.2vw) 
+                translateY(1vw) 
                 translateZ(-55.1vw);
     border: 1px solid peru;
 }
@@ -191,7 +206,7 @@ body{
     transform: rotateX(90deg) 
                 translateX(51.3vw) 
                 translateY(4.5vw) 
-                translateZ(-56.9vw);
+                translateZ(-57.7vw);
 }
 
 .fence2-front{
@@ -241,8 +256,8 @@ body{
     width: 3vw;
     height: 4vw;
     background: white;
-    transform: translateX(37.4vw) 
-                translateY(55.2vw) 
+    transform: translateX(37.3vw) 
+                translateY(56vw) 
                 translateZ(4vw);
 }
 
@@ -261,51 +276,72 @@ body{
     background: var(--color-stairs);
     box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
     transform: translateX(41vw) 
-                translateY(55vw) 
+                translateY(55.4vw) 
                 translateZ(1.3vw);
     border: 1px solid peru;
 }
 
 .stairs-front-2{
-    width: 6.2vw;
+    width: 6.5vw;
     height: 1vw;
     background: var(--color-stairs);
     box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
     transform-origin: bottom left;
     transform: rotateX(90deg) 
-                translateX(46.4vw) 
+                translateX(46vw) 
                 translateY(4.4vw) 
-                translateZ(-60vw);
+                translateZ(-61.8vw);
     border-top: 1px solid peru;
     border-bottom: 1px solid peru;
     border-left: 1px solid peru;
 }
 
 .stairs-top-2{
-    width: 6.1vw;
+    width: 6.5vw;
     height: 1.7vw;
     background: var(--color-stairs);
     box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
-    transform: translateX(43vw) 
-                translateY(53.3vw) 
+    transform: translateX(42.5vw) 
+                translateY(56vw) 
                 translateZ(3vw);
     border: 1px solid peru;
 }
 
 .stairs-front-3{
-    width: 6.1vw;
+    width: 6.7vw;
     height: 1vw;
     background: var(--color-stairs);
     box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
     transform-origin: bottom left;
     transform: rotateX(90deg) 
-                translateX(44vw) 
+                translateX(43.4vw) 
                 translateY(4.3vw) 
-                translateZ(-52vw);
+                translateZ(-56vw);
     border: 1px solid peru;
 }
 
-.wall1{
+.tree-1{
+	border: 3vw solid green;
+	box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+	transform: rotateX(90deg) 
+		translateY(7vw)
+                translateX(4vw) 
+				translateZ(-47vw);
+}
+
+.tree-side-right-1{
+	height: 6.2vw;
+	border: 1vw solid green;
+	box-sizing: border-box; /*Define como el ancho y el alto del elemento son calculados: ya sea que incluyan el relleno y los bordes o no*/
+    transform-origin: bottom left;
+	transform: rotateY(-90deg) 
+		rotate(90deg)
+		translateZ(-7.5vw)
+        translateX(41.5vw);
+}
+
+.wall-1{
     width: 15vw;
     height: 20vw;
     background: transparent;
