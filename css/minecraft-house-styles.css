@@ -7,6 +7,8 @@
     --color-grey-middle-shadow: #ABB2B9;
     --color-grey-hard-shadow: #979A9A;
     --color-stairs: BurlyWood;
+	--column-color: Sienna;
+	--column-shadows-color: SaddleBrown;
     --fence-height: 3vw;
     --fence-front-height: 5vh;
     /*--fence-top-depth:;*/
@@ -180,7 +182,7 @@ body{
     transform-origin: bottom left;
     transform: rotateY(90deg) 
                 translateX(-4vw) 
-                translateY(56.1vw) 
+                translateY(56.15vw) 
                 translateZ(40.2vw);
 }
 
@@ -255,7 +257,7 @@ body{
     transform-origin: bottom left;
     transform: rotateY(90deg) 
                 translateX(-4vw) 
-                translateY(55.5vw) 
+                translateY(55.6vw) 
                 translateZ(52.9vw);
 }
 
@@ -351,7 +353,7 @@ body{
 }
 
 .wall-1{
-    width: 19vw;
+    width: 17vw;
     height: 4vw;
     background: white;
     border: 1px solid white;
@@ -376,16 +378,71 @@ body{
 
 .bamboo{
 	background: LimeGreen;
-	border: 1px solid Lime;
+	border: 2px solid Lime;
+	width: 0.3vw;
+	height: 0.7vw;
 }
 
 .bamboo-1{
-	width: 0.5vw;
-	height: 1vw;
 	transform: rotateX(90deg) 
 		translateX(14vw) 
-		translateY(0.7vw)
+		translateY(0.7vw) 
 		translateZ(-48vw);
+}
+
+.bamboo-side-right{
+	background: ForestGreen;
+	border: 2px solid LimeGreen;
+	width: 0.4vw;
+	height: 0.7vw;
+}
+
+.bamboo-side-right-1{
+	transform: rotateY(-90deg) 
+		rotate(90deg)
+		translateZ(-13.8vw)
+        translateX(47.1vw) 
+		translateY(-0.6vw);
+}
+
+.bamboo-2{
+	transform: rotateX(90deg) 
+		translateX(14vw) 
+		translateY(1.7vw) 
+		translateZ(-48vw);
+}
+
+.bamboo-side-right-2{
+	transform: rotateY(-90deg) 
+		rotate(90deg)
+		translateZ(-13.8vw)
+        translateX(47.1vw) 
+		translateY(-1.6vw);
+}
+
+.bamboo-3{
+	transform: rotateX(90deg) 
+		translateX(14vw) 
+		translateY(2.7vw) 
+		translateZ(-48vw);
+}
+
+.bamboo-side-right-3{
+	transform: rotateY(-90deg) 
+		rotate(90deg)
+		translateZ(-13.8vw)
+        translateX(47.1vw) 
+		translateY(-2.6vw);
+}
+
+.bamboo-top{
+	width: 0.4vw;
+	height: 0.4vw;
+	background: LimeGreen;
+	border: 2px solid Lime;
+	transform: translateY(47vw) 
+		translateX(13.4vw) 
+		translateZ(3vw);
 }
 
 .tree-top-1{
@@ -393,11 +450,35 @@ body{
 	width: 3.8vw;
 	border: 1vw solid green;
 	background: green;
-	transform: translateX(1.3vw) 
-		translateY(47vw)
+	transform: translateX(2vw) 
+		translateY(47.2vw)
 		translateZ(6vw);
 	
 }
+
+
+.column{
+	width: 0.6vw;
+	height: 9vw;
+}
+
+.column-1{
+	background: var(--column-color);
+	transform: rotateX(90deg) 
+		translateX(17.6vw) 
+		translateY(4.7vw) 
+		translateZ(-45vw);
+}
+
+.column-side-right-1{
+	background: var(--column-shadows-color);
+	transform: rotateY(-90deg) 
+		rotate(90deg)
+		translateZ(-17.3vw)
+        translateX(44.1vw) 
+		translateY(-4.5vw);
+}
+
 
 /*.wall-1{
     width: 15vw;
