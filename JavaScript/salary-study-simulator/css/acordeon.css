@@ -1,0 +1,76 @@
+/***ACOORDEON***/
+.acordeon{
+	width: 70%;
+	max-width: 90vw;
+	padding: 2em;
+	border-radius: 25px;
+	background-color: #D6DBDF;
+}
+
+.acordeon .bloque{
+	background-color: #AAB7B8;
+	margin-bottom: 1em;
+	padding: 1em;
+	border-radius: 25px;
+}
+
+.acordeon .h2{
+	background-color: #BDC3C7;
+	margin-bottom: 1em;
+	padding: 1vw;
+	border-radius: 15px;
+	color: #0c5460;
+}
+
+.acordeon .contenido{
+	height: 0;
+	background-color: #D6DBDF;
+	padding: 0em;
+	border-radius: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #0c5460;
+	overflow: hidden; /*ocultar el contenido*/
+	transition: all .5s ease; /*animmacion de abrir y cerrar*/
+}
+
+.content-text-accordion{
+	margin-left: 1vw;
+	margin-right: 1vw;
+}
+
+.acordeon .bloque.activo .contenido{
+	height: 6vw;
+}
+/***ACOORDEON***/
+
+@media screen and (max-width: 912px) {
+    /***ACOORDEON***/
+	.paragraph-tips {
+		font-size: 5vw;
+		text-align: center;
+	}
+	
+	.acordeon {
+		width: 85%;
+	}
+	
+	.content-text-accordion {
+		font-size: 4vw;
+	}
+	
+	.acordeon .bloque.activo .contenido {
+		height: 20vw;
+		/*overflow-y: scroll; /*aactivar el scroll vertical*/
+	}
+	
+	.acordeon .bloque.activo .contenido.height-47{
+		height: 47vw;
+	}
+	
+	.acordeon .bloque.activo .contenido.height-27 {
+		height: 27vw;
+	}
+	/***ACOORDEON***/
+}

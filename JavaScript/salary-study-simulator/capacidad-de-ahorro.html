@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulaci&oacute;n de estudio de salarios</title>
+    <link rel="stylesheet" href="./css/capacidad_de_ahorro.css">
+	<link rel="stylesheet" href="./css/acordeon.css">
+</head>
+<body>
+    <div class="container">
+        <!-- [Video 22] Reto: simulación de estudio de salarios -->
+        <header>
+            <h1>CAPACIDAD DE AHORRO</h1>
+    
+            <p class="introduction-paragraph">Simulaci&oacute;n de estudio de salarios</p>
+
+            <h2>
+                Calcula la posibilidad que tienes de separar un porcentaje de tus ingresos y reservarlo para su uso en el futuro
+            </h2>
+        </header>
+        
+        <div class="insert-content">
+            <section class="incomes saving-capacity">
+
+                <form id="formIncomes">
+                    <h3>Ingresos</h3>
+
+                    <label for="selectIncomeType">Tipo de ingreso</label>
+                    <select name="selectIncomeType" id="selectIncomeType" required class="select">
+                        <option value="">Seleccionar...</option>
+                        <option value="Nominas">N&oacute;minas</option>
+                        <option value="Alquileres">Alquileres</option>
+                        <option value="Primas">Primas</option>
+                        <option value="Otros ingresos">Otros ingresos</option>
+                    </select>
+
+                    <label for="InputIncome">Ingreso</label>
+                    <input type="number" id="InputIncome" required class="input">
+        
+                    <button type="button" onclick="printData('showIncomesList', 'selectIncomeType', 'InputIncome')" class="button">
+                        Agregar
+                    </button>
+        
+                    
+                </form>
+            </section>
+
+            <section class="expenses saving-capacity">
+                <form id="formExpenses">
+                    <h3>Gastos</h3>
+
+                    <label for="selectExpensesType">Tipo de gasto</label>
+                    <select name="selectExpensesType" id="selectExpensesType" required class="select">
+                        <option value="">Seleccionar...</option>
+                        <option value="Supermercado">Supermercado</option>
+                        <option value="Gastos fijos">Gastos fijos</option>
+                        <option value="Formacion">Formaci&oacute;n</option>
+                        <option value="Ocio">Ocio</option>
+                    </select>
+					
+                    <label for="InputExpenses">Gasto</label>
+                    <input type="number" id="InputExpenses" required class="input">
+        
+                    <button type="button" onclick="printData('showExpensesList', 'selectExpensesType', 'InputExpenses')" class="button">
+                        Agregar
+                    </button>
+        
+                    
+                </form>
+            </section>
+			
+        </div>
+		
+		<div class="container-button">
+			<button type="button" onclick="calculateSavingCapacity()" class="button" id="buttonCalculateSavingCapacity">
+				Calcular saldo
+			</button>
+		</div>
+		
+		<div class="result-content">
+			<div class="center">
+				<div class="residue">
+					<p class="paragraph-residue">
+						<strong>Saldo:</strong> <span id="resultResidue"></span>
+					</p>
+				</div>
+			</div>
+
+			<div class="budget saving-capacity absolute">
+				<h3>Ingresos</h3>
+				<div class="show-incomes" id="showIncomesList">
+				</div>
+
+				<h3>Gastos</h3>
+				<div class="show-expenses" id="showExpensesList">
+				</div>
+			</div>
+			
+			<div class="alerts">
+				<div id="savingCapacityOk" class="alert-success alert hide-alert-success">
+					<strong>¡Felicidades!</strong> Puedes ahorrar el <span id="percentSavings"></span>% de tus ingresos
+				</div>
+				<div id="savingCapacityNotOk" class="alert-danger alert hide-alert-danger">
+					<strong>¡Malas noticias!</strong> No tienes capacidad de ahorro
+				</div>
+				<div id="savingCapacityMightImprove" class="alert-warning alert hide-alert-warning">
+					<strong>¡Alerta!</strong> No tienes capacidad de ahorro, pero puedes mejorar
+				</div>
+			</div>
+			
+		</div>
+		
+		<div class="savings-capacity-tips center hide-elements hide-alert-info">
+				<h2 class="title-tips hide-elements">Concejos</h2>
+
+				<p class="paragraph-tips hide-elements ">Puedes seguir estos pasos para empezar tu ahorro: </p>
+				
+				<div class="acordeon hide-elements">
+					<div class="bloque activo hide-elements">	
+						<h2 class="h2 hide-elements">Consulta tu presupuesto</h2>
+						<p class="contenido hide-elements">
+							<span class="content-text-accordion hide-elements">Revisa si ya has incluido todos los gastos o falta algo, si los montos han cambiado.</span>
+						</p>
+					</div>
+					<div class="bloque hide-elements ">
+						<h2 class="h2 hide-elements ">¿Tienes superávit?</h2>
+						<p class="contenido hide-elements ">
+							<span class="content-text-accordion hide-elements ">Resta los egresos de los ingresos y si te queda dinero, entonces tienes capacidad de ahorro.</span>
+						</p>
+					</div>
+					<div class="bloque hide-elements ">
+						<h2 class="h2 hide-elements ">¿Tienes déficit?</h2>
+						<p class="contenido hide-elements ">
+							<span class="content-text-accordion hide-elements ">Haz el mismo cálculo anterior y si no te queda dinero o te falta para cubrir los gastos, entonces no cuentas con capacidad de ahorro.</span>
+						</p>
+					</div>
+					<div class="bloque hide-elements ">
+						<h2 class="h2 hide-elements ">Revisa tus gastos</h2>
+						<p class="contenido height-47 hide-elements ">
+							<span class="content-text-accordion hide-elements ">El déficit puede ser provocado por un mal manejo de las finanzas; y, no, porque los ingresos no te permitan ahorrar. Revisa tus gastos fijos y variables. Normalmente, en los variables podrás encontrar los gastos hormiga, que tanto afectan la solvencia económica. En los gastos fijos, quizá encuentres suscripciones de pago que ya no usas o que ya no necesitas.</span>
+						</p>
+					</div>
+					<div class="bloque hide-elements ">
+						<h2 class="h2 hide-elements ">Elige un método de ahorro</h2>
+						<p class="contenido height-27 hide-elements ">
+							<span class="content-text-accordion hide-elements ">Si quieres desarrollar la cultura del ahorro en tu hogar, te recomendamos escoger un método que te permita ser constante y disciplinado y visualizar tus objetivos a futuro.</span>
+						</p>
+					</div>
+					<div class="bloque hide-elements ">
+						<h2 class="h2 hide-elements ">Práctica buenos hábitos</h2>
+						<p class="contenido hide-elements ">
+							<span class="content-text-accordion hide-elements ">Para incrementar tu capacidad de ahorro es fundamental que incluyas buenos hábitos de ahorro en tu día a día.</span>
+						</p>
+					</div>
+				</div>
+				
+			</div>
+			
+    </div>
+
+	
+	<footer class="footer">
+		<div class="code">
+			<p>You can see the code <a href="https://codepen.io/faidrn/pen/LYQaPYp">here</a></p>
+		</div>
+		<div class="author">
+			<p>Coded by <a href="https://twitter.com/_FAID__">FAID</a>.</p>
+		</div>
+	</footer>
+
+	<script src="./js/acordeon.js"></script>
+    <script src="./js/analisis.js"></script>
+</body>
+</html>

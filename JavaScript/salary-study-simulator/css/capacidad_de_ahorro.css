@@ -1,0 +1,435 @@
+/* 
+[Video 22] Reto: simulación de estudio de salarios
+ */
+
+:root{
+	--sm: 14px; /*pequeño*/
+    --md: 16px; /*medio*/
+    --lg: 18px; /*grande*/
+	--grey-color-bg: LightSkyBlue;
+}
+
+/* POSITIONS */
+
+.absolute {
+    position: absolute;
+  }
+
+.center{
+	display: grid;
+    place-items: center;
+    justify-content: center;
+}
+
+/* MAIN STRUCTURE */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    background: #EBF5FB;
+}
+
+.container{
+    width:90vw;
+    margin-top: 1vw;
+    height: 86vh;
+    display: grid;
+    justify-content: center;
+}
+
+header{
+    margin-top: 2vw;
+    display: grid;
+    place-items: center;
+    margin-bottom: 3vw;
+}
+
+.introduction-paragraph{
+    font-weight: lighter;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+}
+
+h1{
+    font-size: 2vw;
+    color: #F39C12;
+}
+
+h2{
+    color: #52BE80;
+    font-size: 1.5vw;
+}
+
+.insert-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 90vw;
+}
+
+.saving-capacity{
+    border: 1px solid #95A5A6;
+    border-radius: 25px;
+    width: 22vw;
+    height: 46vh;
+    margin-top: 0vw;
+    box-shadow: 2px 2px 5px #999;
+}
+
+form{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    margin-top: 1vw;
+}
+
+h3{
+    font-size: 2vw;
+    margin-bottom: 2vw;
+}
+
+label{
+    font-size: 1.5vw;
+    margin-bottom: 1vh;
+}
+
+.input, 
+.select{
+    width: 13vw;
+    height: 5vh;
+    font-weight: lighter;
+    margin-bottom: 2vh;
+    border-radius: 12px;
+    border: 1px solid #EAECEE;
+}
+
+.button{
+    margin-top: 2vh;
+    width: 13vw;
+    height: 5vh;
+    border-radius: 50px;
+    background: #3498DB;
+    border: 1px solid #3498DB;
+    color: white;
+}
+
+.container-button{
+	display: flex;
+	justify-content: center;
+	margin-top: 4vw;;
+}
+
+.result-content{
+	width: 90vw;
+	display: grid;
+    justify-content: center;
+	align-content: center;
+	margin-top: 3vw;
+}
+
+.residue{
+	display: flex;
+	/*flex-direction: row;*/
+	font-size: 2vw;
+	border-bottom: 2px solid #3498DB;
+	border-radius: 25px;
+	width: 17vw;
+	justify-content: center;
+}
+
+.paragraph-residue strong{
+	color: #1B4F72;
+}
+
+.budget{
+	margin-top: 4vw;
+	height: 16vw;
+	width: 75%;
+	max-width: 90vw;
+	left: 10vw;
+	display: flex; 
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 2vw;
+}
+
+.margin-top-10{
+	margin-top: 10vw;
+}
+
+.show-incomes, 
+.show-expenses{
+	width: 100%;
+	max-width: 90vw;
+	display: flex; 
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	margin-top: -1vw;
+	margin-bottom: 1vw;
+}
+
+.budget-list{
+	display: grid;
+	grid-template-columns: auto 1fr;
+    gap: 16px;  /*agregamos espaciado */
+    margin-bottom: 24px;
+    align-items: center;
+	font-size: var(--lg);
+	background-color: var(--grey-color-bg);
+	border-radius: 5px;
+	height: 3vw;
+	width: 14vw;
+	padding: 0 24px;
+}
+
+.budget-list p:nth-child(1){
+	font-weight: bold;
+}
+
+
+.alerts{
+	width: 35vw;
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	margin-top: 2vw;
+	height: 10vw;
+}
+
+.alert{
+	padding: 15px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	font-size: 1.3vw;
+	transition: all .5s ease; /*animmacion de abrir y cerrar*/
+}
+
+.alert-success{
+	color: #155724;
+  	background-color: #d4edda;
+  	border-color: #c3e6cb;
+}
+
+.alert-danger {
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}
+
+.alert-danger-margin-top{
+	margin-top: -9vw;
+}
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert-warning-margin-top{
+	margin-top: -15vw;
+}
+
+.alert-info {
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border-color: #bee5eb;
+}
+
+.hide-alert-success, 
+.hide-alert-danger, 
+.hide-alert-warning, 
+.hide-alert-info{
+	opacity: 0;
+	height: 0;
+}
+
+.hide-elements{
+	height: 0;
+}
+
+.savings-capacity-tips{
+	width: 90vw;
+	margin-top: 18vw;
+}
+
+.title-tips{
+	margin-bottom: 2vw;
+	color: #0c5460;
+}
+
+.paragraph-tips{
+	margin-bottom: 2vw;	
+}
+
+
+.footer{
+	display: flex;
+	justify-content: center;
+	flex-direction: row;
+    align-items: center;
+	gap: 3vw;
+	margin-bottom: -70vw;
+	padding: 2vw;
+}
+
+.margin-bottom-footer{
+	margin-bottom: -225vw;
+}
+
+/* .code{
+    margin-top: -22vh;
+}
+*/
+.code p{
+    font-size: 3vh;
+}
+
+.author{
+    font-size: 16px;
+}
+
+.code a, .author a{
+    text-decoration: none;
+    color: #1A5276;
+} 
+
+@media screen and (max-width: 912px) {
+	.container{
+		margin-top: 4vw;
+	}
+	
+	h1 {
+		font-size: 6vw;
+	}
+	
+	.introduction-paragraph{
+		font-size: 5vw;
+		text-align: center;
+		margin-top: 3vw;
+    	margin-bottom: 3vw;
+	}
+	
+	h2{
+		font-size: 5vw;
+	}
+	
+    .insert-content{
+        /* display: flex; */
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3vw;
+    }
+
+	.saving-capacity {
+		width: 60vw;
+		height: 39vh;
+	}
+	
+	.incomes {
+        margin-bottom: 6vw;
+	}
+	
+	form{
+		margin-top: 5vw;
+	}
+	
+	h3{
+		font-size: 6vw;
+        margin-bottom: 4vw;
+	}
+	
+	label {
+		font-size: 5vw;
+	}
+	
+	.input, .select {
+		width: 45vw;
+		height: 4vh;
+		font-size: 4vw;
+	}
+	
+	.button {
+		margin-top: 1vh;
+		width: 35vw;
+		font-size: 4.5vw;
+	} 
+	
+	.result-content{
+		margin-top: 6vw;
+	}
+	
+	.residue{
+		font-size: 5vw;
+		width: 45vw;
+	}
+
+	.budget{
+		margin-top: 5vw;
+		position: relative;
+		padding: 8vw;
+		left: 2vw;
+		height: 58vh;
+	}
+
+	.margin-top-10{
+		margin-top: 34vw;
+	}
+
+	.show-incomes, 
+	.show-expenses{
+		flex-direction: column;
+	}
+
+	.budget-list{
+		padding: 0 14px;
+		height: 11vw;
+		width: 50vw;
+		margin-bottom: 10px;
+		font-size: var(--md);
+	}
+
+	.alerts{
+		width: 80vw;
+		/* margin-top: 5vw; */
+		margin-top: -182vw;
+	}
+	
+	.alert{
+		font-size: 6vw;
+	}
+
+	.alert-warning-padding{
+		padding: 10px;
+	}
+	
+	.alert-warning-margin-top {
+		margin-top: -24vw;
+	}
+
+	.alert-danger-margin-top{
+		margin-top: -11vw;
+	}
+
+	.savings-capacity-tips{
+		margin-top: 8vw;
+	}
+
+	.footer{
+		margin-bottom: -555vw;
+	}
+
+	.margin-bottom-footer{
+		margin-bottom: -1050vw;
+	}
+	
+}
+
+@media screen and (max-width: 500px) {}
