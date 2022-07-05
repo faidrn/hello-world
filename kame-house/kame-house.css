@@ -148,3 +148,29 @@ body{
 		translateY(-1.5vw)
 		translateZ(12.7vw);
 }
+
+.stairs-top-2{
+	transform: rotateY(5deg) 
+		translateX(42.3vw)
+		translateY(28vw)
+		translateZ(6vw);
+}
+
+.stairs-front-3{
+	transform: rotateX(-88deg) 
+		rotateY(-18deg) 
+		translateX(48.3vw)
+		translateY(-1.2vw)
+		translateZ(12.5vw);
+}
+
+.stairs-side-1{
+	height: 0.5vw;
+	width: 2vw;
+	background: white;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+	transform: translateX(48.3vw)
+		translateY(-1.2vw)
+		translateZ(12.5vw);
+}
