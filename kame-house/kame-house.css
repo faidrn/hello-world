@@ -1,0 +1,150 @@
+:root{
+    --green-color: #186A3B;
+    --sand-color: NavajoWhite;
+    --ground-color: SandyBrown;
+    --roof-color: #F44336;
+    --color-grey-light-shadow: #F2F4F4;
+    --color-grey-middle-shadow: #EAECEE;
+    --color-grey-hard-shadow: #979A9A;
+	--wall-color: #FFCDD2;
+	--wall-shadows-color: #EF9A9A;
+	--roof-shadow-color: #D32F2F;
+    --wood-height: 2vw;
+    --house-foundations-height: 1.5vw;
+}
+
+
+/* POSITIONS */
+
+.absolute {
+    position: absolute;
+  }
+
+
+  /* MAIN STRUCTURE */
+
+*{
+    margin: 0;
+    padding: 0;
+	transform-style: preserve-3d; /*permite hacer dibujos 3D*/
+}
+
+body{
+    /*background: var(--green-color);*/
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    overflow: hidden; /*ocultar el contenido desbordado*/
+    background-repeat: no-repeat;
+    /*background-size=define el tamaño de la imagen de fondo; 
+    cover= cambia el tamaño de la imagen de fondo para asegurarse de que el elemento esté completamente cubierto*/
+    background-size: cover; 
+	overflow-y: scroll; /*aactivar el scroll vertical*/
+}
+
+.container{
+    background: var(--sand-color);
+    width: 70vw;
+    height: 70vw;
+    /*
+    transform= define como transformar el elemento,
+    perspective= esta propiedad determina la distancia entre el plano z=0 y el usuario para dar cierta perspectiva a un 
+    elemento posicionado en 3D,
+    rotateX= gira un elemento en el eje X,
+    rotateZ= gira un elemento en el eje Z,
+    translateZ= mueve el elemento en el eje Z
+    */
+    transform: perspective(10000px)
+             rotateX(78deg)
+             rotateZ(34deg)
+             translateZ(-8vw);
+	border-radius: 50%;
+}
+
+.house-foundation{
+	height: var(--house-foundations-height);
+	background: white;
+	border-top: 1px solid black;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+}
+
+.house-foundation-1{
+	width: 17vw;	
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(27vw)
+		translateY(-1vw)
+		translateZ(23vw);
+}
+
+.house-foundation-2{
+	width: 14vw;
+	transform: rotateX(-90deg) 
+		rotateY(56deg) 
+		translateX(-10.2vw)
+		translateY(-1.1vw)
+		translateZ(49vw);
+}
+
+.stairs{
+	background: var(--color-grey-middle-shadow);
+	height: 0.5vw;
+	width: 6vw;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+	/*
+	box-shadow: 'desplazamiento horizontal' 'desplazamiento vertical' 'desenfoque' 
+			'extension' 'color' inset=sombra interna;
+	*/
+	/*box-shadow: 0px 0px 10px 0px #333 inset;*/
+}
+
+.stairs-front-1{
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(48vw)
+		translateY(-1vw)
+		translateZ(13vw);
+}
+
+/*.stairs-height-superior{
+	background: var(--color-grey-light-shadow);
+	height: 0.15vw;
+	width: 6vw;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+}
+
+.stairs-height-superior-1{
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(57.5vw)
+		translateY(-4.2vw)
+		translateZ(21vw);
+}*/
+
+.stairs-top{
+	height: 0.7vw;
+	width: 4.4vw;
+	background: white;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+}
+
+.stairs-top-1{
+	transform: rotateY(5.3deg) 
+		translateX(42.6vw)
+		translateY(29vw)
+		translateZ(5.9vw);
+}
+
+.stairs-front-2{
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(48vw)
+		translateY(-1.5vw)
+		translateZ(12.7vw);
+}
