@@ -26,6 +26,11 @@ This is part of the #RetosPlatziCSS from Platzi. Using the CSS property transfor
 
 **currently under coding!**
 
+## JavaScript
+In this section there are some JavaScript projects, which are exercises to learn js.
+![](https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png)
+Image from [freepnglogos](https://www.freepnglogos.com/pics/javascript)
+
 
 # License
 This is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
