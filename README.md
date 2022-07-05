@@ -28,8 +28,8 @@ This is part of the #RetosPlatziCSS from Platzi. Using the CSS property transfor
 
 ## JavaScript
 In this section there are some JavaScript projects, which are exercises to learn js.
-![](https://www.freepnglogos.com/uploads/javascript-png/javascript-vector-logo-yellow-png-transparent-javascript-vector-12.png)
-Image from [freepnglogos](https://www.freepnglogos.com/pics/javascript)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/240px-Unofficial_JavaScript_logo_2.svg.png)
+
 
 
 # License
