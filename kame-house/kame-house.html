@@ -10,7 +10,7 @@
 <body>
 	<!--https://3dwarehouse.sketchup.com/model/18625e0e1a6a45e7c7a51a8a316a4777/Kame-House?hl=es
 		https://3dwarehouse.sketchup.com/warehouse/v1.0/publiccontent/539ee841-cc9b-4e12-a92b-354dd6492920-->
-	<div class="container">
+	<div class="container" id="container-id">
 		<div class="absolute house-foundation house-foundation-1"></div>
 		<div class="absolute house-foundation house-foundation-2"></div>
 		<div class="absolute stairs stairs-front-1"></div>
@@ -24,8 +24,16 @@
 		<div class="absolute house-foundation house-foundation-3"></div>
 		<div class="absolute house-foundation house-foundation-4"></div>
 		<div class="absolute floor"></div>
-		<div class="absolute wall wall-1"></div>
-		<div class="absolute wall wall-2"></div>
+		<div class="absolute wall wall-1" id="wall-1-id"></div>
+		<div class="absolute wall wall-2" id="wall-2-id"></div>
+		<div class="absolute frame-window frame-window-1">
+			<div class="absolute first-window first-window-1">
+				<div class="absolute glass glass-1"></div>
+			</div>
+		</div>
+		
 	</div>
+	
+	<script src="./kame-house.js"></script>
 </body>
 </html>
