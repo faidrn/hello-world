@@ -103,28 +103,17 @@ body{
 }
 
 .stairs-front-1{
-	transform: rotateX(-90deg) 
+	/*transform: rotateX(-90deg) 
 		rotateY(-18deg) 
 		translateX(48vw)
 		translateY(-1vw)
-		translateZ(13vw);
+		translateZ(13vw);*/
+	transform: rotateX(90deg) 
+		rotateY(36deg) rotateZ(1deg) 
+		translateX(50vw)
+		translateY(0.5vw)
+		translateZ(2.2vw);
 }
-
-/*.stairs-height-superior{
-	background: var(--color-grey-light-shadow);
-	height: 0.15vw;
-	width: 6vw;
-	box-sizing: border-box;
-    transform-origin: bottom left;
-}
-
-.stairs-height-superior-1{
-	transform: rotateX(-90deg) 
-		rotateY(-18deg) 
-		translateX(57.5vw)
-		translateY(-4.2vw)
-		translateZ(21vw);
-}*/
 
 .stairs-top{
 	height: 0.7vw;
@@ -137,18 +126,18 @@ body{
 }
 
 .stairs-top-1{
-	transform: rotateY(5.3deg) 
-		translateX(42.6vw)
-		translateY(29vw)
-		translateZ(5.9vw);
+	transform: rotateZ(29deg) 
+		translateX(50vw)
+		translateY(3.7vw)
+		translateZ(1.3vw);
 }
 
 .stairs-front-2{
-	transform: rotateX(-90deg) 
-		rotateY(-18deg) 
-		translateX(48vw)
-		translateY(-1.5vw)
-		translateZ(12.7vw);
+	transform: rotateX(90deg) 
+		rotateY(36deg) rotateZ(1deg) 
+		translateX(49vw)
+		translateY(0.8vw)
+		translateZ(3.3vw);
 }
 
 .stairs-top-2{
@@ -262,6 +251,7 @@ body{
 		translateX(23.4vw)
 		translateY(-2.3vw)
 		translateZ(12vw);
+	overflow: hidden;
 }
 
 .wall-2{
@@ -273,4 +263,52 @@ body{
 		translateY(-2.15vw)
 		translateZ(37vw);
 	clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%); 
+	overflow: hidden;
+}
+
+.division-wall-1{
+	border-top: 2px solid;
+	height: 5vw;
+	width: 17vw;
+}
+
+.division-wall-2{
+	border-top: 2px solid;
+	height: 5vw;
+	width: 22.6vw;
+}
+
+.frame-window{
+	border: 1px solid;
+}
+
+.frame-window-1{
+	height: 6vw;
+	width: 5vw;
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(32vw)
+		translateY(-9vw)
+		translateZ(24vw);
+}
+
+.first-window{
+	border-bottom: 0.5vw solid white;
+	border-top: 0.5vw solid white;
+	border-left: 0.5vw solid white;
+	border-right: 0.5vw solid white;
+}
+
+.first-window-1{
+	height: 83%;
+	max-height: 6vw;
+	width: 78%;
+	max-width: 5vw;
+}
+
+.glass{
+	background: SteelBlue;
+	border: 1px solid;
+	width: 100%;
+	height: 100%;
 }
