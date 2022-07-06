@@ -76,16 +76,16 @@ body{
 	transform: rotateX(-90deg) 
 		rotateY(-18deg) 
 		translateX(27vw)
-		translateY(-1vw)
+		translateY(-0.8vw)
 		translateZ(23vw);
 }
 
 .house-foundation-2{
-	width: 14vw;
+	width: 13vw;
 	transform: rotateX(-90deg) 
 		rotateY(56deg) 
 		translateX(-10.2vw)
-		translateY(-1.1vw)
+		translateY(-0.9vw)
 		translateZ(49vw);
 }
 
@@ -130,6 +130,8 @@ body{
 	height: 0.7vw;
 	width: 4.4vw;
 	background: white;
+	border-bottom: 1px solid;
+	border-top: 1px solid;
 	box-sizing: border-box;
     transform-origin: bottom left;
 }
@@ -150,18 +152,19 @@ body{
 }
 
 .stairs-top-2{
-	transform: rotateY(5deg) 
-		translateX(42.3vw)
-		translateY(28vw)
-		translateZ(6vw);
+	transform: rotateZ(28deg) 
+		translateX(50vw)
+		translateY(4vw)
+		translateZ(1.8vw);
 }
 
 .stairs-front-3{
-	transform: rotateX(-88deg) 
-		rotateY(-18deg) 
-		translateX(48.3vw)
-		translateY(-1.1vw)
-		translateZ(12.5vw);
+	width: 5vw;
+	transform: rotateX(90deg) 
+		rotateY(36deg) rotateZ(1deg) 
+		translateX(49vw)
+		translateY(1.3vw)
+		translateZ(3.8vw);
 }
 
 .stairs-side{
@@ -171,54 +174,62 @@ body{
 }
 
 .stairs-side-1{
-	height: 2.8vw;
+	height: 2.2vw;
 	width: 0.5vw;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-left: 1px solid;
 	transform: rotateX(-45deg) 
-		translateX(47.4vw)
-		translateY(19vw)
-		translateZ(20.3vw);
+		translateX(50vw)
+		translateY(23.2vw)
+		translateZ(27vw);
 }
 
 .stairs-side-2{
-	height: 2vw;
-	width: 4vw;
-	border: 1px solid black;
-	transform: rotateX(-90deg) 
-		rotateY(90deg) 
-		translateX(-25.9vw)
-		translateY(-0.2vw)
-		translateZ(46vw);
+	height: 1.7vw;
+	width: 3vw;
+	border-top: 1px solid;
+	border-right: 1px solid;
+	border-left: 1px solid;
 	clip-path: polygon(47% 0, 100% 0, 100% 100%, 0 100%);
+	transform: rotateX(-89deg) 
+		rotateY(69deg) 
+		rotateZ(2deg)
+		translateX(-14vw)
+		translateY(-0.9vw)
+		translateZ(57vw);
 }
 
 .stairs-side-3{
-	height: 2vw;
+	height: 1.6vw;
 	width: 0.5vw;
 	border: 1px solid black;
-	transform: translateX(43.3vw)
-		translateY(20.5vw)
-		translateZ(1.3vw);
+	transform: rotateX(1deg) rotateZ(16deg)
+		translateX(63.4vw) 
+		translateY(24.5vw)
+		translateZ(5.2vw);
 }
 
 .house-foundation-3{
-	width: 4vw;
+	width: 2.85vw;
 	height: 1.3vw;
 	background: var(--color-grey-light-shadow);
 	transform: rotateX(-90deg) 
-		rotateY(-20deg) 
-		translateX(50vw)
-		translateY(-0.3vw)
-		translateZ(6.3vw);
+		rotateY(-30deg) rotateZ(2deg) 
+		translateX(57vw)
+		translateY(-3.8vw)
+		translateZ(2.6vw);
 }
 
 .house-foundation-4{
-	width: 10vw;
+	width: 11.4vw;
 	height: 1.3vw;
-	transform: rotateX(-90deg) 
-		rotateY(70deg) 
-		translateX(-8.7vw)
-		translateY(-1.1vw)
-		translateZ(57vw);
+	transform: rotateX(-89deg) 
+		rotateY(69deg) 
+		rotateZ(2deg)
+		translateX(-12.9vw)
+		translateY(-1vw)
+		translateZ(60vw);
 }
 
 .floor{
@@ -228,6 +239,38 @@ body{
 	border: 1px solid black;
 	box-sizing: border-box;
     transform-origin: bottom left;
-	transform: translateX(32vw) 
-		translateY(5vw);
+	transform: rotateY(-2deg) 
+		rotateZ(36deg) 
+		rotateX(0deg)
+		translateX(44vw)
+		translateY(-11vw)
+		translateZ(1vw);
+}
+
+.wall{
+	background: var(--wall-color);
+	border: 1px solid;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+}
+
+.wall-1{
+	height: 13vw;
+	width: 17vw;
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(23.4vw)
+		translateY(-2.3vw)
+		translateZ(12vw);
+}
+
+.wall-2{
+	height: 21vw;
+	width: 22.6vw;
+	transform: rotateX(-90deg) 
+		rotateY(56deg) 
+		translateX(6.5vw)
+		translateY(-2.15vw)
+		translateZ(37vw);
+	clip-path: polygon(50% 0%, 100% 38%, 100% 100%, 0 100%, 0% 38%); 
 }
