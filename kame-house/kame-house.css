@@ -335,12 +335,12 @@ body{
 
 .frame-window-3{
 	height: 2vw;
-	width: 7.7vw;
-	transform: rotateX(-75deg) 
+	width: 8vw;
+	transform: rotateX(-60deg) 
 		rotateY(-33deg) 
-		rotateZ(3deg) 
-		translateX(58vw)
-		translateY(-6vw)
+		rotateZ(11deg) 
+		translateX(61vw)
+		translateY(0vw)
 		translateZ(26vw);
 	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
@@ -350,5 +350,25 @@ body{
 	max-height: 2vw;
 	width: 100%;
 	max-width: 7.7vw;
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.frame-window-4{
+	height: 2vw;
+	width: 2.5vw;
+	transform: rotateX(-61deg) 
+		rotateY(44deg) 
+		rotateZ(-24deg) 
+		translateX(-10vw)
+		translateY(4.4vw)
+		translateZ(53vw);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.first-window-4{
+	height: 49%;
+	max-height: 2vw;
+	width: 100%;
+	max-width: 2.5vw;
 	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
