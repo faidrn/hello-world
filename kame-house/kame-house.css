@@ -280,6 +280,9 @@ body{
 
 .frame-window{
 	border: 1px solid;
+	overflow: hidden;
+	box-sizing: border-box;
+    transform-origin: bottom left;
 }
 
 .frame-window-1{
@@ -287,9 +290,9 @@ body{
 	width: 5vw;
 	transform: rotateX(-90deg) 
 		rotateY(-18deg) 
-		translateX(32vw)
-		translateY(-9vw)
-		translateZ(24vw);
+		translateX(37vw)
+		translateY(-8vw)
+		translateZ(26vw);
 }
 
 .first-window{
@@ -311,4 +314,41 @@ body{
 	border: 1px solid;
 	width: 100%;
 	height: 100%;
+}
+
+.frame-window-2{
+	height: 6vw;
+	width: 2.5vw;
+	transform: rotateX(-90deg) 
+		rotateY(55deg) 
+		translateX(-12vw)
+		translateY(-7.65vw)
+		translateZ(46vw);
+}
+
+.first-window-2{
+	height: 83%;
+	max-height: 6vw;
+	width: 61%;
+	max-width: 2.5vw;
+}
+
+.frame-window-3{
+	height: 2vw;
+	width: 7.7vw;
+	transform: rotateX(-75deg) 
+		rotateY(-33deg) 
+		rotateZ(3deg) 
+		translateX(58vw)
+		translateY(-6vw)
+		translateZ(26vw);
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
+}
+
+.first-window-3{
+	height: 49%;
+	max-height: 2vw;
+	width: 100%;
+	max-width: 7.7vw;
+	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
 }
