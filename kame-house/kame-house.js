@@ -49,3 +49,11 @@ addDivs(translateObject, "absolute", "division-wall-1", "wall-1-id", false, 5);
 translateObject = getPositions(18.7, -2);
 
 addDivs(translateObject, "absolute", "division-wall-2", "wall-2-id", false, 9);
+
+translateObject = getPositions(3.4, -0.6);
+
+addDivs(translateObject, "blinds", "", "id-white-glass-1", false, 6);
+
+translateObject = getPositions(3.4, -0.6);
+
+addDivs(translateObject, "blinds", "", "id-white-glass-2", false, 6);
