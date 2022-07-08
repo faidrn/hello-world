@@ -27,6 +27,7 @@
     margin: 0;
     padding: 0;
 	transform-style: preserve-3d; /*permite hacer dibujos 3D*/
+	font-family: 'Roboto', sans-serif;
 }
 
 body{
@@ -542,6 +543,69 @@ body{
 		rotateX(-3deg) 
 		rotateY(20deg) 
 		rotateZ(19deg);
+}
+
+.text{
+	transform: rotateX(-90deg) 
+		rotateY(56deg) 
+		rotateZ(-24deg) 
+		translateX(6.5vw)
+		translateY(-17.5vw)
+		translateZ(47vw);
+	font-weight: bold;
+	font-size: 2vw;
+	text-align: right;
+}
+
+.text-1, 
+.text-2{
+	color: var(--roof-color);
+	text-shadow: -2px 1px 1px black;
+}
+
+.roof-side-3{
+	height: 0.7vw;
+	width: 18.8vw;
+	transform: rotateX(-100deg) 
+		rotateY(-18deg) 
+		translateX(31vw)
+		translateY(-22.9vw)
+		translateZ(25vw) 
+		rotateZ(-3deg);
+}
+
+.roof-side-4{
+	height: 0.7vw;
+	width: 14vw;
+	transform: rotateX(-90deg) 
+		rotateY(56deg) 
+		rotateZ(-35deg) 
+		translateX(0vw)
+		translateY(-18.5vw)
+		translateZ(50vw);
+}
+
+.roof-side-5{
+	height: 0.7vw;
+	width: 14vw;
+	transform: rotateX(-90deg) 
+		rotateY(56deg) 
+		rotateZ(35deg) 
+		translateX(-20.7vw)
+		translateY(-18vw)
+		translateZ(66vw);
+}
+
+.roof-side-6{
+	height: 15vw;
+	width: 17vw;
+	transform: perspective(10000vw)
+		rotateX(141deg)
+		rotateZ(83deg)
+		translateZ(-34vw) 
+		translateY(-28vw) 
+		translateX(-8.1vw) 
+		rotateY(-17deg);
 }
 
 @media screen and (max-width: 820px) {
