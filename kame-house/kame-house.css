@@ -436,25 +436,116 @@ body{
 	background: #229954;
 }
 
-.cylinder{
-	background-color: #666;
-	border-radius: 65px / 25px;
-}
-
-.cylinder:before {
-  content: "";
-  background-color: #ccc;
-  width: 40x;
-  height: 10px;
-  border-radius: 65px / 15px;
-  top: 0px;
-}
-
-.cylinder-1{
-	width: 4px;
-	height: 5px;
+.column{
+	height: 10vw;
+	width: 0.3vw;
+	background: white;
 	border: 1px solid;
-	transform: translateX(67vw) 
-		translateY(58.5vw) 
-		translateZ(10vw);
+}
+
+.column-left-1{
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(61vw)
+		translateY(-9.5vw)
+		translateZ(14.8vw);
+}
+
+.column-left-2{
+	transform: rotateX(-90deg) 
+		rotateY(56deg) 
+		translateX(5.3vw)
+		translateY(-8.15vw)
+		translateZ(57vw);
+}
+
+.column-right-1{
+	transform: rotateX(-90deg) 
+		rotateY(-18deg) 
+		translateX(62.9vw)
+		translateY(-9.5vw)
+		translateZ(7vw);
+}
+
+.column-right-2{
+	transform: rotateX(-90deg) 
+		rotateY(59deg) 
+		translateX(10.3vw)
+		translateY(-8.15vw)
+		translateZ(57.6vw);
+}
+
+/* .ceiling-bottom{
+	height: 12vw;
+	width: 18vw;
+	background: white;
+	border: 1px solid black;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+	transform: rotateY(-2deg) 
+		rotateZ(37deg) 
+		rotateX(1deg)
+		translateX(45vw)
+		translateY(-10.4vw)
+		translateZ(11.4vw);
+} */
+
+.ceiling-side-1{
+	height: 2vw;
+	width: 25vw;
+	transform: rotateX(90deg) 
+		rotateY(43deg) 
+		translateX(84vw)
+		translateY(21.9vw)
+		translateZ(-0.5vw);
+	clip-path: polygon(0 0, 0 100%, 100% 100%);
+	background: white;
+	box-sizing: border-box;
+    transform-origin: bottom left;
+	border: 1px solid;
+}
+
+.roof{
+	background: var(--roof-color);
+	box-sizing: border-box;
+    transform-origin: bottom left;
+	border: 1px solid;
+}
+
+.roof-side-1{
+	height: 0.6vw;
+	width: 25vw;
+	transform: rotateX(90deg) 
+		rotateY(43deg) 
+		translateX(84vw)
+		translateY(22.5vw)
+		translateZ(-1.6vw);
+}
+
+.roof-side-2{
+	width: 13.9vw;
+	height: 0.7vw;
+	transform: rotateX(-89deg) 
+		rotateY(69deg) 
+		rotateZ(2deg)
+		translateX(-23vw)
+		translateY(-13vw)
+		translateZ(73vw);
+}
+
+.roof-1{
+	height: 13.6vw;
+	width: 10.3vw;
+	transform: translateX(77.6vw) 
+		translateY(71.8vw) 
+		translateZ(29vw) 
+		rotateX(-3deg) 
+		rotateY(20deg) 
+		rotateZ(19deg);
+}
+
+@media screen and (max-width: 820px) {
+    .roof-side-2{
+		width: 12.9vw;
+	}
 }
