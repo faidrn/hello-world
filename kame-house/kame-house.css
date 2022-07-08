@@ -1,15 +1,14 @@
 :root{
-    --green-color: #186A3B;
+    /* --green-color: #186A3B; */
     --sand-color: NavajoWhite;
-    --ground-color: SandyBrown;
+    /* --ground-color: SandyBrown; */
     --roof-color: #F44336;
     --color-grey-light-shadow: #F2F4F4;
-    --color-grey-middle-shadow: #EAECEE;
-    --color-grey-hard-shadow: #979A9A;
+    --color-grey-middle-shadow: #EAECEE;	
+    /* --color-grey-hard-shadow: #979A9A; */
 	--wall-color: #FFCDD2;
-	--wall-shadows-color: #EF9A9A;
-	--roof-shadow-color: #D32F2F;
-    --wood-height: 2vw;
+	/* --wall-shadows-color: #EF9A9A; */
+	/* --roof-shadow-color: #D32F2F; */
     --house-foundations-height: 1.5vw;
 }
 
@@ -31,7 +30,6 @@
 }
 
 body{
-    /*background: var(--green-color);*/
     display: grid;
     place-items: center;
     height: 100vh;
@@ -608,8 +606,45 @@ body{
 		rotateY(-17deg);
 }
 
+.footer{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: -30vw;
+}
+
+.code{
+    /* margin-top: -22vh; */
+}
+
+.code p{
+    font-size: 2vw;
+}
+
+.author{
+    font-size: 16px;
+}
+
+.code a, .author a{
+    text-decoration: none;
+    color: #1A5276;
+}
+
 @media screen and (max-width: 820px) {
     .roof-side-2{
 		width: 12.9vw;
+	}
+
+	.footer{
+		margin-top: -165vw;
+	}
+
+	.code p{
+		font-size: 5vw;
+	}
+	
+	.author{
+		font-size: 4vw;
 	}
 }
