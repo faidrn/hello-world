@@ -23,10 +23,10 @@ This is part of the #RetosPlatziCSS from Platzi. Using the CSS property transfor
 
 ![](./screens/book-3d.png)
 
-## House in 3D with CSS, style Minecraft
-This is part of the #RetosPlatziCSS from Platzi. Using the CSS property transform.
+## Kame House from Dragon Ball Z, in 3D with CSS, HTM and JavaScript
+Drawing from the kame house in 3D from the anime Dragon Ball Z; using HTML, CSS and JavaScript.
 
-**currently under coding!**
+![](./screens/kame-house-3d.png)
 
 ## JavaScript
 In this section there are some JavaScript projects, which are exercises to learn js.
