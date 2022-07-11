@@ -1,14 +1,9 @@
 :root{
-    /* --green-color: #186A3B; */
     --sand-color: NavajoWhite;
-    /* --ground-color: SandyBrown; */
     --roof-color: #F44336;
     --color-grey-light-shadow: #F2F4F4;
     --color-grey-middle-shadow: #EAECEE;	
-    /* --color-grey-hard-shadow: #979A9A; */
 	--wall-color: #FFCDD2;
-	/* --wall-shadows-color: #EF9A9A; */
-	/* --roof-shadow-color: #D32F2F; */
     --house-foundations-height: 1.5vw;
 }
 
@@ -58,6 +53,42 @@ body{
              rotateZ(34deg)
              translateZ(-8vw);
 	border-radius: 50%;
+}
+
+.grass-container{
+	width: 60vw;
+	height: 60vw;
+	border-radius: 50%;
+	box-sizing: border-box;
+	transform: translateX(1vw) 
+		translateY(1vw);
+	background: url("./img/grass.jpeg");
+}
+
+.palms{
+	width: 20vw;
+	height: 50vw;
+}
+
+.palm-1{
+	transform: rotateX(-90deg) 
+		rotateY(234deg) 
+		translateX(-21vw)
+		translateY(-16vw)
+		translateZ(-24vw);
+}
+
+.palm-2{
+	transform: rotateX(-90deg)  
+		translateX(19vw)
+		translateY(-20.8vw)
+		translateZ(36vw);
+}
+
+img {
+ height: 100%;
+ width: 100%;
+ object-fit: contain;
 }
 
 .house-foundation{
