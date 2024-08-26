@@ -5,12 +5,6 @@
 In this repository, there are exercises carried out to learn HTML, CSS, JS, that is, everything related to web development. So, if you want to use the code in this site, you can do it, and off course, I hope your feedback to improve.
 
 
-# HTML5
-Drawing the HTML5's logo using CSS.
-
-![](./screens/html.png)
-
-
 # 3D Drawings with CSS
 3D drawing with CSS, using the property transform.
 
