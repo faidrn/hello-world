@@ -10,10 +10,6 @@ Drawing the HTML5's logo using CSS.
 
 ![](./screens/html.png)
 
-# Superman's logo
-Drawing the superman's logo using CSS.
-
-![](./screens/superman.png)
 
 # 3D Drawings with CSS
 3D drawing with CSS, using the property transform.
